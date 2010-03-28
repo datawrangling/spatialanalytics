@@ -4,6 +4,9 @@
 # bash /mnt/parse_tweets.sh 2010-02-1 parsed_tweets_feb
 # hadoop distcp /user/root/parsed_tweets_feb/ s3n://where20/parsed_tweets_feb
 
+# optional   -jobconf mapred.output.compress=true \
+# optional   -jobconf mapred.reduce.tasks=0 \
+
 DATELIMIT=$1
 OUTPUT=$2
 
@@ -12,5 +15,5 @@ hadoop jar /home/hadoop/contrib/streaming/hadoop-streaming.jar \
   -output $OUTPUT \
   -mapper "parse_stream.py" \
   -file 'parse_stream.py' \
-  -jobconf mapred.output.compress=true \
+  -jobconf mapred.reduce.tasks=0 \
   -jobconf mapred.job.name=parse_tweets_$DATELIMIT
