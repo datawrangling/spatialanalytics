@@ -50,10 +50,10 @@ top_time_zone = FOREACH grouped_locs {
 
 sorted_counts = LOAD 'us_location_counts' as (location:chararray, user_count:long);
 -- filter these to remove previously standardized_locations
-std_location = LOAD 'standard_locations' as (
+std_locations = LOAD 'standard_locations' as (
   location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray);
   
-std_location = FOREACH std_location GENERATE location, user_count;
+std_locations = FOREACH std_locations GENERATE location, user_count;
 
 cogrouped_locs = cogroup std_locations by location, sorted_counts by location;
 -- find locations where count of std_locations is 0
