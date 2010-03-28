@@ -77,7 +77,11 @@ def main(argv=None):
       d = geonameids[loc]
       try:
         idnum = int(max(d, key=d.get))
-        geonameid_mapping[loc]=str(idnum)
+        try: 
+          geonameid_mapping[loc] = overrides[loc]
+        except:  
+          geonameid_mapping[loc] = str(idnum)
+        
         output = ("\t".join([loc, str(idnum)])).encode('utf8')
         print output
       except:
