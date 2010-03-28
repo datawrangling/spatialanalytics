@@ -1,6 +1,9 @@
 #!/bin/sh
 # Run as follows:
 # $ bash standardize_tweets.sh s3://where20/sample-tweets-*
+# or:
+# $ bash standardize_tweets.sh s3://where20/parsed-tweets-2010*
+# $ bash standardize_tweets.sh s3://where20/parsed-tweets-20100210-19
 INPUTFILES=$1
 
 echo Running US location counts

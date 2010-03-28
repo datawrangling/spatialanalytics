@@ -31,11 +31,11 @@ city_state_counts = FOREACH joined_names GENERATE $0 as location, $3 as std_loca
 standard_us_cities_abbrev = FOREACH standard_us_cities 
   GENERATE LOWER(std_location) as city_state, std_location, geonameid, population, countyfips;
 
-joined_names = JOIN location_counts BY location, standard_us_cities_abbrev BY city_state;
-city_state_abbrev_counts = FOREACH joined_names GENERATE $0 as location, $3 as std_location,
+joined_abbrev_names = JOIN location_counts BY location, standard_us_cities_abbrev BY city_state;
+city_state_abbrev_counts = FOREACH joined_abbrev_names GENERATE $0 as location, $3 as std_location,
   $1 as user_count, $3 as geonameid, $4 as population, $5 as fips;
   
-city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
+all_city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
 
 city_state_wo_space = FOREACH city_state_counts GENERATE REPLACE(location, ', ', ','), std_location,
  user_count, geonameid, population, fips;
@@ -44,7 +44,8 @@ city_state_wo_comma = FOREACH city_state_counts GENERATE REPLACE(REPLACE(locatio
  user_count, geonameid, population, fips;
  
 city_state_counts = UNION city_state_counts, city_state_wo_space, city_state_wo_comma;
- 
+
+city_state_counts = DISTINCT city_state_counts;
 
 rmf city_state_counts
 sorted_city_state_counts = ORDER city_state_counts BY population DESC;

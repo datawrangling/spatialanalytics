@@ -6,7 +6,7 @@ parse_geonames.py
 $ grep PPL allCountries.txt | grep US > data/allUSCities.txt
 $ cat data/allUSCities.txt | ./parse_geonames.py > output/standard_us_cities.txt
 $ wc -l standard_us_cities.txt 
-   25860 standard_us_cities.txt
+   25451 standard_us_cities.txt
 
 
 state.txt from http://www.census.gov/geo/www/ansi/state.txt
@@ -46,6 +46,7 @@ for data in StateReader:
   state_fips[data['STUSAB']]=data['STATE']
   state_name[data['STUSAB']]=data['STATE_NAME']
 
+primary_key = {}
 
 def main():
   for line in sys.stdin: 
@@ -65,11 +66,15 @@ def main():
     if int(population) > 0:
       # construct lower case "city,state abbrev."
       standard_name = name + ', ' + fipscode
-      full_standard_name = name + ', ' + state_name[fipscode]
-      # construct county fips code
-      countyfips = state_fips[fipscode] + county
-      print '\t'.join([geonameid,name, latitude,longitude,country_code,
-        cc2,fipscode,county,population, countyfips, standard_name.lower(), full_standard_name.lower()])
+      try:
+        primary_key[standard_name]
+      except:
+        primary_key[standard_name] = 1  
+        full_standard_name = name + ', ' + state_name[fipscode]
+        # construct county fips code
+        countyfips = state_fips[fipscode] + county
+        print '\t'.join([geonameid,name, latitude,longitude,country_code,
+          cc2,fipscode,county,population, countyfips, standard_name.lower(), full_standard_name.lower()])
 
 
 if __name__ == '__main__':
