@@ -30,7 +30,7 @@ rmf top_city_variants
 STORE top_variants INTO 'top_city_variants';
 
 --- now join to locations
-sorted_counts = LOAD 'us_location_counts' as (location:chararray, user_count:long);
+location_counts = LOAD 'us_location_counts' as (location:chararray, user_count:long);
 
 top_city_variants = LOAD 'top_city_variants' AS (
   name:chararray, 
