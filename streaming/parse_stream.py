@@ -113,11 +113,14 @@ def main():
         user_followers_count = clean(user['followers_count'])
         user_friends_count = clean(user['friends_count']) 
         user_statuses_count = clean(user['statuses_count'])
-        user_geo_enabled = user['geo_enabled']
+        if user.has_key('geo_enabled'):           
+          user_geo_enabled = user['geo_enabled']
         if user.has_key('url'):       
           user_location = clean(user['location'])
-        user_lang = clean(user['lang'])
-        user_time_zone = clean(user['time_zone'])
+        if user.has_key('lang'):  
+          user_lang = clean(user['lang'])
+        if user.has_key('time_zone'): 
+          user_time_zone = clean(user['time_zone'])
 
       if tweet.has_key('place'): 
         place = tweet['place'] 
