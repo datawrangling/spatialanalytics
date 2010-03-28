@@ -7,6 +7,10 @@ location_counts = LOAD 'us_location_counts' as (location:chararray, user_count:l
 -- this file was produced by location_standardization/parse_turk_responses.py
 location_geo_mapping = LOAD 's3://where20/location_geo_mapping.txt' as (location:chararray, geonameid:int);
 
+joined_names = JOIN location_counts BY location, location_geo_mapping BY location using "replicated";
+-- location:chararray, user_count:long, location:chararray, geonameid:int
+joined_names = FOREACH joined_names GENERATE $0 as location, $1 as user_count, $3 as geonameid;
+
 standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   geonameid:int,
   name:chararray, 
@@ -19,8 +23,21 @@ standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   population:int,
   countyfips:chararray,
   standard_name:chararray);
-
+  
+--join geo mapping to standard_us_cities to get name, geonameid, population, countyfips  
 standard_us_cities = FOREACH standard_us_cities 
-  GENERATE LOWER(standard_name) as city_state, geonameid, population, countyfips;
+  GENERATE geonameid, population, countyfips;
+  
+joined_turk_results = JOIN standard_us_cities BY geonameid, joined_names BY geonameid using "replicated";
+-- geonameid, population, countyfips, location, user_count, geonameid;
+turk_counts = FOREACH joined_turk_results GENERATE $3 as location, $4 as user_count,
+  $5 as geonameid, $1 as population, $2 as countyfips;
+  
+rmf turk_counts
+sorted_turk_counts = ORDER turk_counts BY population DESC;
+store sorted_turk_counts into 'turk_counts';  
 
-joined_names = JOIN location_counts BY location, standard_us_cities BY city_state;
+-- turk_counts output is in the following format:
+-- [location, user_count, geonameid, population, fips]
+
+
