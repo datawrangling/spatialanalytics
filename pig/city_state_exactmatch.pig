@@ -5,8 +5,6 @@ DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 -- try direct mapping of "city name, state abbrev." to lower case tweet lcoation string
 location_counts = LOAD 'us_location_counts' as (location:chararray, user_count:long);
 
-location_geo_mapping = LOAD 's3://where20/location_geo_mapping.txt' as (location:chararray, geonameid:int);
-
 standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   geonameid:int,
   name:chararray, 

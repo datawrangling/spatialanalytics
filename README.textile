@@ -6,27 +6,51 @@ From the Workshop description:
 
 bq[fr]. "This workshop will focus on uncovering patterns and generating actionable insights from large datasets using spatial analytics. We will explore combining open government data with other location based information sources like Twitter. Participants will be guided through examples that use Hadoop and Amazon EC2 for scalable processing of location data. We will also cover some basics on spatial statistics, correlations, and trends along with how to visualize and communicate your results with open source tools."
 
+h2. Part I: Location Preprocessing & Basic Statistics
+
+h3. Setting up our Hadoop cluster
+
+* Launch Pig Session using EMR
+* hcon.sh to set up web console
+* ssh to the instance
+* sudo apt-get -y install git-core
+* cd /mnt
+* git clone git://github.com/datawrangling/spatialanalytics.git
+
 h3. Counting locations with Hadoop
 
 * Parse Tweets with Hadoop streaming
+** streaming/parse_tweets.sh
 * Count global locations in parsed Tweets with Pig
+** <pre>
+$ cd /mnt/spatialanalytics/pig	
+$ pig -l /mnt global_location_counts.pig 	
+</pre>
+** pig/total_users.pig
 * Count US based locations in parsed Tweets with Pig
+** pig/us_location_counts.pig
 * Visualize long tail of locations
 
-h3. Standardize locations using exact matches with Geonames data 
+h3. Standardize location strings using exact matches in Geonames data 
 
 * Load Geonames data into Hadoop & map to Tweet location strings
+** location_standardization/parse_geonames.py
 * City, state abbreviation mapping
+** pig/city_state_exactmatch.pig
 * City mapping
+** pig/city_exactmatch.pig
 
-h3. Standardize remaining locations with Mechanical Turk
+h3. Standardize remaining location strings with Mechanical Turk
 
 * Expose Geonames data in a Rails search interface
 * Run Pig jobs to generate top locations & time zones for turkers
-* Publish mechanical turk tasks
+** pig/locations_timezones.pig
+* Publish mechanical turk tasks 
+** rails app
 * Parse mechanical turk results for use in Hadoop
+** location_standardization/parse_turk_responses.py
 
-h3. Generate standardize Tweets: Convert US locations to county codes
+h3. Generate location standardized Tweets
 
 * Merge standardized location mappings into lookup table
 * Join lookup table with parsed Tweets, emit standardized tweet dataset
@@ -34,11 +58,13 @@ h3. Generate standardize Tweets: Convert US locations to county codes
 user_id, user_name, user_description, user_profile_image_url, user_url,
 user_followers_count, user_friends_count, user_statuses_count
 
-h3. Sanity check the data: Where are conservative & liberal Twitter users?
+h3. Data sanity check: Where are conservative & liberal Twitter users?
 
 * Grep for tweets with "conservative" or "liberal" in user_description
 * Aggregate by fipscode with Pig
-* Generate SVG county heatmap and compare to 2008 presidential election
+* Generate "county level SVG heatmaps":http://flowingdata.com/2009/11/12/how-to-make-a-us-county-thematic-map-using-free-tools/ and compare to 2008 presidential election 
+
+h2. Part II: Spatial Analysis, Leveraging other data
 
 h3. Spatial Trends
 
@@ -47,7 +73,7 @@ h3. Spatial Trends
 * Generate time resolved heatmaps for top 100 trends over 10 days in Feb
 * Explore data with quick Rails app
 
-h3. Location characterization
+h3. Location Characterization, Classification, & Prediction
 
 * Find phrases highly associated with each county
 * Use per-capita conservative and liberal users by county & tweet text to classify tweets

@@ -15,5 +15,4 @@ filtered_tweets = ?
 filtered_tweets = ? 
 -- use replicated join, since geoid/ location relations are small enough to fit into main memory.
 standardized_tweets = join filtered_tweets by LOWER(user_location), std_locations by location using "replicated";
-
 standardized_tweets = FOREACH standardized_tweets GENERATE ???
