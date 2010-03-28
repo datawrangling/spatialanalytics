@@ -12,6 +12,5 @@ hadoop jar /home/hadoop/contrib/streaming/hadoop-streaming.jar \
   -output $OUTPUT \
   -mapper "parse_stream.py" \
   -file 'parse_stream.py' \
-  -jobconf mapred.reduce.tasks=0 \
   -jobconf mapred.output.compress=true \
-  -jobconf mapred.job.name=parse_tweets
+  -jobconf mapred.job.name=parse_tweets_$DATELIMIT
