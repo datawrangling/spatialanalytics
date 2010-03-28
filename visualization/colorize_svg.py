@@ -1,7 +1,7 @@
 #!/usr/bin/env pythonw
 # encoding: utf-8
 # requires BeautifulSoup
-
+# $ python colorize_svg.py > daily.svg
  
 import csv
 from BeautifulSoup import BeautifulSoup, Tag
@@ -13,13 +13,11 @@ import time
 
 # read in twitter user counts & county populations...
 usercount = {}
-population = {}
 reader = csv.reader(open('county_counts.txt'), delimiter="\t")
 for row in reader:
   try:
     fips = row[0]
     usercount[fips] = int(row[1])
-    population[fips] = int(row[2])
   except:
     pass
 
@@ -140,7 +138,6 @@ for p in paths:
   if p['id'] not in ["State_Lines", "separator"]:
     try:
       count = usercount[p['id']]
-      total_pop = population[p['id']]
     except:
       # print "Missing", p["id"] 
       continue

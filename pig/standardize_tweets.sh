@@ -21,6 +21,9 @@ pig -l /mnt turk_exactmatch.pig
 echo Merging Standardized location strings
 echo --------------------------
 pig -l /mnt standardize_locations.pig
+echo Checking county level user counts...
+echo --------------------------
+pig -l /mnt county_counts.pig
 ## result is 'standard_locations' 
 # location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray
 echo Generating list of unknown locations for turkers
