@@ -22,16 +22,18 @@ standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   county:chararray,
   population:int,
   countyfips:chararray,
-  standard_name:chararray);
+  std_location:chararray);
   
 --join geo mapping to standard_us_cities to get name, geonameid, population, countyfips  
+
 standard_us_cities = FOREACH standard_us_cities 
-  GENERATE geonameid, population, countyfips;
+    GENERATE name, std_location, geonameid, population, countyfips;  
+  
   
 joined_turk_results = JOIN standard_us_cities BY geonameid, joined_names BY geonameid using "replicated";
 -- geonameid, population, countyfips, location, user_count, geonameid;
-turk_counts = FOREACH joined_turk_results GENERATE $3 as location, $4 as user_count,
-  $5 as geonameid, $1 as population, $2 as countyfips;
+turk_counts = FOREACH joined_turk_results GENERATE $0 as location, $1 as std_location, $6 as user_count,
+  $7 as geonameid, $3 as population, $4 as countyfips;
   
 rmf turk_counts
 sorted_turk_counts = ORDER turk_counts BY population DESC;

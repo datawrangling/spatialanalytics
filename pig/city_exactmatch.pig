@@ -15,10 +15,10 @@ standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   county:chararray,
   population:int,
   countyfips:chararray,
-  standard_name:chararray);
+  std_location:chararray);
   
 standard_us_cities = FOREACH standard_us_cities 
-  GENERATE name, standard_name, geonameid, latitude, longitude, population, countyfips;
+  GENERATE name, std_location, geonameid, latitude, longitude, population, countyfips;
 
 grouped_cities = GROUP standard_us_cities BY name;
 
@@ -34,7 +34,7 @@ location_counts = LOAD 'us_location_counts' as (location:chararray, user_count:l
 
 top_city_variants = LOAD 'top_city_variants' AS (
   name:chararray, 
-  standard_name:chararray, 
+  std_location:chararray, 
   geonameid:int, 
   latitude:float, 
   longitude:float, 
@@ -43,7 +43,7 @@ top_city_variants = LOAD 'top_city_variants' AS (
   );
 
 joined_names = JOIN location_counts BY location, top_city_variants BY LOWER(name);
-city_counts = FOREACH joined_names GENERATE $0 as location, $1 as user_count, 
+city_counts = FOREACH joined_names GENERATE $0 as location, $3 as std_location, $1 as user_count, 
   $4 as geonameid, $7 as population, $8 as fips;
 
 rmf city_counts

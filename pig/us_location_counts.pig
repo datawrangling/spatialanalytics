@@ -2,7 +2,7 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
-tweets = LOAD 's3://where20/parsed-tweets-feb' as (
+tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
   tweet_id:chararray,
   tweet_created_at:chararray, 
