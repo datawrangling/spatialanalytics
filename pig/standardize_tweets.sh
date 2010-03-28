@@ -28,8 +28,8 @@ hadoop fs -getmerge /user/hadoop/locations_timezones /mnt/locations_timezones.cs
 # need to remove UT iphone strings then limit to top 8k for turkers...
 grep -i 'ÜT:' -v /mnt/locations_timezones.csv | head -8000 > /mnt/top_8k_us_locations.txt
 ## TODO: remove any exact matches for countries, states, or state abbrev
-#
-#
+# we can do this with python post-processing
+
 
 # echo Running tweet standardization...
 # echo --------------------------
