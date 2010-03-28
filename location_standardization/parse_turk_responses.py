@@ -17,6 +17,13 @@ help_message = '''
 Usage: $ ./parse_turk_responses.py -f data/Batch_213923_result.csv > output/location_geo_mapping.txt
 '''
 
+# manual overrides for a few bad turk geonameid responses
+override_file = 'data/overrides.csv'
+OverrideReader = csv.DictReader(open(override_file, 'r'), delimiter=',')
+overrides ={}
+for data in OverrideReader:
+  overrides[data['location']]=data['geonameid']
+
 
 class Usage(Exception):
   def __init__(self, msg):
@@ -40,9 +47,6 @@ def main(argv=None):
         raise Usage(help_message)
       if option in ("-f", "--file"):
         infile = value
-        
-        
-        
         
     # outfile = open(infile.replace('result', 'parsed'), 'w')
     reader = csv.DictReader(open(infile, 'r'), delimiter=',', quotechar='"')

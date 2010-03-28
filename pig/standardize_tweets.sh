@@ -8,4 +8,9 @@ pig -l /mnt city_state_exactmatch.pig
 echo Running Exact Match to Geonames "City"
 echo --------------------------
 pig -l /mnt city_exactmatch.pig
-#pig -l /mnt turk_exactmatch.pig
+echo Running Turk Match to Geonames location strings
+echo --------------------------
+pig -l /mnt turk_exactmatch.pig
+echo Running location string merge & standardization...
+echo --------------------------
+pig -l /mnt standardize_tweets.pig
