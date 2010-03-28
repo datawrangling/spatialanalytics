@@ -38,6 +38,23 @@ standard_us_cities = FOREACH standard_us_cities GENERATE
   population, 
   countyfips;
 
+standard_us_cities_wo_space = FOREACH standard_us_cities GENERATE 
+  REPLACE(city_state, ', ', ',') as city_state, 
+  std_location, 
+  geonameid, 
+  population, 
+  countyfips;  
+  
+standard_us_cities_wo_comma = FOREACH standard_us_cities GENERATE 
+  REPLACE(REPLACE(city_state, ',', ' '), '  ', ' ') as city_state,
+  std_location, 
+  geonameid, 
+  population, 
+  countyfips;  
+  
+standard_us_cities = UNION standard_us_cities, 
+  standard_us_cities_wo_space, standard_us_cities_wo_comma;   
+
 joined_names = JOIN location_counts BY location, standard_us_cities BY city_state;
 
 city_state_counts = FOREACH joined_names GENERATE 
@@ -57,6 +74,23 @@ standard_us_cities_abbrev = FOREACH standard_us_cities GENERATE
   population, 
   countyfips;
 
+standard_us_cities_abbrev_wo_space = FOREACH standard_us_cities_abbrev GENERATE 
+  REPLACE(city_state, ', ', ',') as city_state, 
+  std_location, 
+  geonameid, 
+  population, 
+  countyfips;  
+
+standard_us_cities_abbrev_wo_comma = FOREACH standard_us_cities_abbrev GENERATE 
+  REPLACE(REPLACE(city_state, ',', ' '), '  ', ' ') as city_state,
+  std_location, 
+  geonameid, 
+  population, 
+  countyfips;  
+
+standard_us_cities_abbrev = UNION standard_us_cities_abbrev, 
+  standard_us_cities_abbrev_wo_space, standard_us_cities_abbrev_wo_comma;  
+  
 joined_abbrev_names = JOIN location_counts BY location, standard_us_cities_abbrev BY city_state;
 
 city_state_abbrev_counts = FOREACH joined_abbrev_names GENERATE 
@@ -69,27 +103,7 @@ city_state_abbrev_counts = FOREACH joined_abbrev_names GENERATE
   
 --------------------
   
-both_city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
-
-
-city_state_wo_space = FOREACH city_state_counts GENERATE 
-  REPLACE(location, ', ', ',') as location, 
-  std_location,
-  user_count, 
-  geonameid, 
-  population, 
-  fips;
-
-city_state_wo_comma = FOREACH city_state_counts GENERATE 
-  REPLACE(REPLACE(location, ',', ' '), '  ', ' ') as location,
-  std_location,
-  user_count, 
-  geonameid, 
-  population, 
-  fips;
- 
-all_city_state_counts = UNION both_city_state_counts, city_state_wo_space, city_state_wo_comma;
-
+all_city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
 final_city_state_counts = DISTINCT all_city_state_counts;
 
 rmf city_state_counts
