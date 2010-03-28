@@ -36,6 +36,7 @@ Copyright (c) 2010 Data Wrangling LLC. All rights reserved.
 import sys
 import os
 import csv
+import time
 
 infile = 'data/state.txt'
 StateReader = csv.DictReader(open(infile, 'r'), delimiter='|')
@@ -45,6 +46,9 @@ state_name = {}
 for data in StateReader:
   state_fips[data['STUSAB']]=data['STATE']
   state_name[data['STUSAB']]=data['STATE_NAME']
+  
+fips_corrections = {'5128581':'36061'}  
+  
 
 primary_key = {}
 
@@ -72,7 +76,10 @@ def main():
         primary_key[standard_name] = 1  
         full_standard_name = name + ', ' + state_name[fipscode]
         # construct county fips code
-        countyfips = state_fips[fipscode] + county
+        try:
+          countyfips = fips_corrections[geonameid]
+        except:  
+          countyfips = state_fips[fipscode] + county          
         print '\t'.join([geonameid,name, latitude,longitude,country_code,
           cc2,fipscode,county,population, countyfips, standard_name.lower(), full_standard_name.lower()])
 

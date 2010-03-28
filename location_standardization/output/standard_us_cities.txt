@@ -17500,7 +17500,7 @@
 5128568	New Square	41.13676	-74.03792	US	 	NY	087	6339	36087	new square, ny	new square, new york
 5128569	New Suffolk	40.99149	-72.47592	US	 	NY	103	342	36103	new suffolk, ny	new suffolk, new york
 5128577	New Windsor	41.47676	-74.02375	US	 	NY	071	9090	36071	new windsor, ny	new windsor, new york
-5128581	New York City	40.71427	-74.00597	US	 	NY	 	8008278	36 	new york city, ny	new york city, new york
+5128581	New York City	40.71427	-74.00597	US	 	NY	 	8008278	36061	new york city, ny	new york city, new york
 5128616	New York Mills	43.10535	-75.29128	US	 	NY	065	3121	36065	new york mills, ny	new york mills, new york
 5128639	Newark	43.04673	-77.09525	US	 	NY	117	9365	36117	newark, ny	newark, new york
 5128644	Newark Valley	42.22369	-76.18326	US	 	NY	107	1028	36107	newark valley, ny	newark valley, new york
