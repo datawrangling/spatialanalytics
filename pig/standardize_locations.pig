@@ -9,13 +9,33 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
-city_counts = LOAD 'city_counts' as (location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray);
-city_state_counts = LOAD 'city_state_counts' as (location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray);
+city_counts = LOAD 'city_counts' as (
+  location:chararray, 
+  std_location:chararray, 
+  user_count:int, 
+  geonameid:int, 
+  population:int, 
+  fips:chararray);
+
+city_state_counts = LOAD 'city_state_counts' as (
+  location:chararray, 
+  std_location:chararray, 
+  user_count:int, 
+  geonameid:int, 
+  population:int, 
+  fips:chararray);
+  
 -- Assign location geonameid based on US exact matches if available:
 std_locations = UNION city_counts, city_state_counts;
 
 --If turk location is not in std_locations, then merge
-turk_counts = LOAD 'turk_counts' as (location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray);
+turk_counts = LOAD 'turk_counts' as (
+  location:chararray, 
+  std_location:chararray, 
+  user_count:int, 
+  geonameid:int, 
+  population:int, 
+  fips:chararray);
 
 cogrouped_locs = cogroup std_locations by location, turk_counts by location;
 -- find locations where count of std_locations is 0

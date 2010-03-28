@@ -5,7 +5,8 @@ DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
 -- Exact match approach 1
 -- try direct mapping of "city name, state abbrev." to lower case tweet lcoation string
-location_counts = LOAD 'us_location_counts' as (location:chararray, user_count:long);
+location_counts = LOAD 'us_location_counts' as 
+  (location:chararray, user_count:long);
 
 standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   geonameid:int,
@@ -20,34 +21,73 @@ standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   countyfips:chararray,
   std_location:chararray,
   std_full_location:chararray);
+  
+--Desired output:  
+--city_state_counts = LOAD 'city_state_counts' as (
+--  location:chararray, 
+--  std_location:chararray, 
+--  user_count:int, 
+--  geonameid:int, 
+--  population:int, 
+--  fips:chararray);  
     
-standard_us_cities = FOREACH standard_us_cities 
-  GENERATE LOWER(std_full_location) as city_state, std_location, geonameid, population, countyfips;
+standard_us_cities = FOREACH standard_us_cities GENERATE 
+  LOWER(std_full_location) as city_state, 
+  std_location, 
+  geonameid, 
+  population, 
+  countyfips;
 
 joined_names = JOIN location_counts BY location, standard_us_cities BY city_state;
-city_state_counts = FOREACH joined_names GENERATE $0 as location, $3 as std_location,
-  $1 as user_count, $3 as geonameid, $4 as population, $5 as fips;
+
+city_state_counts = FOREACH joined_names GENERATE 
+  $0 as location, 
+  $3 as std_location,  
+  $1 as user_count, 
+  $4 as geoname_id,
+  $5 as population,
+  $6 as countyfips;
   
-standard_us_cities_abbrev = FOREACH standard_us_cities 
-  GENERATE LOWER(std_location) as city_state, std_location, geonameid, population, countyfips;
+standard_us_cities_abbrev = FOREACH standard_us_cities GENERATE 
+  LOWER(std_location) as city_state, 
+  std_location, 
+  geonameid, 
+  population, 
+  countyfips;
 
 joined_abbrev_names = JOIN location_counts BY location, standard_us_cities_abbrev BY city_state;
-city_state_abbrev_counts = FOREACH joined_abbrev_names GENERATE $0 as location, $3 as std_location,
-  $1 as user_count, $3 as geonameid, $4 as population, $5 as fips;
+
+city_state_abbrev_counts = FOREACH joined_abbrev_names GENERATE 
+  $0 as location,
+  $3 as std_location,  
+  $1 as user_count,
+  $4 as geonameid, 
+  $5 as population, 
+  $6 as fips;
   
-all_city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
+both_city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
 
-city_state_wo_space = FOREACH city_state_counts GENERATE REPLACE(location, ', ', ','), std_location,
- user_count, geonameid, population, fips;
+city_state_wo_space = FOREACH city_state_counts GENERATE 
+  REPLACE(location, ', ', ','), 
+  std_location,
+  user_count, 
+  geonameid, 
+  population, 
+  fips;
 
-city_state_wo_comma = FOREACH city_state_counts GENERATE REPLACE(REPLACE(location, ',', ' '), '  ', ' '), std_location,
- user_count, geonameid, population, fips;
+city_state_wo_comma = FOREACH city_state_counts GENERATE 
+  REPLACE(REPLACE(location, ',', ' '), '  ', ' '),
+  std_location,
+  user_count, 
+  geonameid, 
+  population, 
+  fips;
  
-city_state_counts = UNION city_state_counts, city_state_wo_space, city_state_wo_comma;
+all_city_state_counts = UNION both_city_state_counts, city_state_wo_space, city_state_wo_comma;
 
-city_state_counts = DISTINCT city_state_counts;
+final_city_state_counts = DISTINCT all_city_state_counts;
 
 rmf city_state_counts
-sorted_city_state_counts = ORDER city_state_counts BY population DESC;
+sorted_city_state_counts = ORDER final_city_state_counts BY population DESC;
 store sorted_city_state_counts into 'city_state_counts';
   
