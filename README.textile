@@ -1,0 +1,56 @@
+h1. Spatial Analysis of Twitter Data with Hadoop, Pig, & Mechanical Turk
+
+This repository contains the code examples and supporting material for the "Spatial Analytics" Workshop held at O'Reilly Where 2.0 on March 30, 2010.  Twitter is rolling out enhanced geo features.  It will be a while before geo tagged tweets are widely adopted, but there is a lot we can do right now using just profile location string information.
+
+h3. Counting locations with Hadoop
+
+* Parse Tweets with Hadoop streaming
+* Count global locations in parsed Tweets with Pig
+* Count US based locations in parsed Tweets with Pig
+* Visualize long tail of locations
+
+h3. Standardize locations using exact matches with Geonames data 
+
+* Load Geonames data into Hadoop & map to Tweet location strings
+* City, state abbreviation mapping
+* City mapping
+
+h3. Standardize remaining locations with Mechanical Turk
+
+* Expose Geonames data in a Rails search interface
+* Run Pig jobs to generate top locations & time zones for turkers
+* Publish mechanical turk tasks
+* Parse mechanical turk results for use in Hadoop
+* Merge ge
+
+h3. Generate standardize Tweets: Convert US locations to county codes
+
+* Merge standardized location mappings into lookup table
+* Join lookup table with parsed Tweets, emit standardized tweet dataset
+* Emit: user_screen_name, tweet_id, tweet_created_at, city, state, fipscode, latitude, longitude, tweet_text,
+user_id, user_name, user_description, user_profile_image_url, user_url,
+user_followers_count, user_friends_count, user_statuses_count
+
+h3. Sanity check the data: Where are conservative & liberal Twitter users?
+
+* Grep for tweets with "conservative" or "liberal" in user_description
+* Aggregate by fipscode with Pig
+* Generate SVG county heatmap and compare to 2008 presidential election
+
+h3. Spatial Trends
+
+* Use Pig to tokenize tweet text
+* Aggregate counts at hourly & county level
+* Generate time resolved heatmaps for top 100 trends over 10 days in Feb
+* Explore data with quick Rails app
+
+h3. Location characterization
+
+* Find phrases highly associated with each county
+* Load Data.gov datasets on Unemployment, Income, Voting record
+* Correlate Tweet phrases to those quantities using location
+
+h3. Next steps
+
+* Load reverse geocode data into distributed cache, use spatial index to assign lat/lon coordinates to counties or congressional districts using Hadoop
+* Use Tweet phrases associated with high crime areas to predict real time level of criminal activity based on Tweets
