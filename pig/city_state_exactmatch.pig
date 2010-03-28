@@ -46,7 +46,9 @@ city_state_counts = FOREACH joined_names GENERATE
   $1 as user_count, 
   $4 as geonameid,
   $5 as population,
-  $6 as countyfips;
+  $6 as fips;
+  
+--------------  
   
 standard_us_cities_abbrev = FOREACH standard_us_cities GENERATE 
   LOWER(std_location) as city_state, 
@@ -65,10 +67,13 @@ city_state_abbrev_counts = FOREACH joined_abbrev_names GENERATE
   $5 as population, 
   $6 as fips;
   
+--------------------
+  
 both_city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
 
+
 city_state_wo_space = FOREACH city_state_counts GENERATE 
-  REPLACE(location, ', ', ','), 
+  REPLACE(location, ', ', ',') as location, 
   std_location,
   user_count, 
   geonameid, 
@@ -76,7 +81,7 @@ city_state_wo_space = FOREACH city_state_counts GENERATE
   fips;
 
 city_state_wo_comma = FOREACH city_state_counts GENERATE 
-  REPLACE(REPLACE(location, ',', ' '), '  ', ' '),
+  REPLACE(REPLACE(location, ',', ' '), '  ', ' ') as location,
   std_location,
   user_count, 
   geonameid, 
