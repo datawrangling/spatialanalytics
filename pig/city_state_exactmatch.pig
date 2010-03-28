@@ -20,15 +20,20 @@ standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   std_full_location:chararray);
     
 standard_us_cities = FOREACH standard_us_cities 
-  GENERATE LOWER(std_location) as city_state, std_location, geonameid, population, countyfips;
+  GENERATE LOWER(std_full_location) as city_state, std_location, geonameid, population, countyfips;
 
 joined_names = JOIN location_counts BY location, standard_us_cities BY city_state;
 city_state_counts = FOREACH joined_names GENERATE $0 as location, $3 as std_location,
   $1 as user_count, $3 as geonameid, $4 as population, $5 as fips;
   
+standard_us_cities_abbrev = FOREACH standard_us_cities 
+  GENERATE LOWER(std_location) as city_state, std_location, geonameid, population, countyfips;
+
+joined_names = JOIN location_counts BY location, standard_us_cities_abbrev BY city_state;
+city_state_abbrev_counts = FOREACH joined_names GENERATE $0 as location, $3 as std_location,
+  $1 as user_count, $3 as geonameid, $4 as population, $5 as fips;
   
-  
-  
+city_state_counts = UNION city_state_abbrev_counts, city_state_counts; 
 
 rmf city_state_counts
 sorted_city_state_counts = ORDER city_state_counts BY population DESC;
