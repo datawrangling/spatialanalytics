@@ -1,6 +1,10 @@
 h1. Spatial Analysis of Twitter Data with Hadoop, Pig, & Mechanical Turk
 
-This repository contains the code examples and supporting material for the "Spatial Analytics" Workshop held at O'Reilly Where 2.0 on March 30, 2010.  Twitter is rolling out enhanced geo features.  It will be a while before geo tagged tweets are widely adopted, but there is a lot we can do right now using just profile location string information.
+This repository contains the code examples and supporting material for the "Spatial Analytics Workshop":http://en.oreilly.com/where2010/public/schedule/detail/12400 held at O'Reilly Where 2.0 on March 30, 2010.  Twitter is rolling out enhanced geo features.  It will be a while before geo tagged tweets are widely adopted, but there is a lot we can do right now using just profile location string information.
+
+From the Workshop description: 
+
+bq[fr]. "This workshop will focus on uncovering patterns and generating actionable insights from large datasets using spatial analytics. We will explore combining open government data with other location based information sources like Twitter. Participants will be guided through examples that use Hadoop and Amazon EC2 for scalable processing of location data. We will also cover some basics on spatial statistics, correlations, and trends along with how to visualize and communicate your results with open source tools."
 
 h3. Counting locations with Hadoop
 
@@ -21,7 +25,6 @@ h3. Standardize remaining locations with Mechanical Turk
 * Run Pig jobs to generate top locations & time zones for turkers
 * Publish mechanical turk tasks
 * Parse mechanical turk results for use in Hadoop
-* Merge ge
 
 h3. Generate standardize Tweets: Convert US locations to county codes
 
@@ -47,6 +50,7 @@ h3. Spatial Trends
 h3. Location characterization
 
 * Find phrases highly associated with each county
+* Use per-capita conservative and liberal users by county & tweet text to classify tweets
 * Load Data.gov datasets on Unemployment, Income, Voting record
 * Correlate Tweet phrases to those quantities using location
 
