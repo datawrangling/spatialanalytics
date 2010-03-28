@@ -44,7 +44,7 @@ city_state_counts = FOREACH joined_names GENERATE
   $0 as location, 
   $3 as std_location,  
   $1 as user_count, 
-  $4 as geoname_id,
+  $4 as geonameid,
   $5 as population,
   $6 as countyfips;
   
