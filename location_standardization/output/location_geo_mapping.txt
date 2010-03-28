@@ -1,0 +1,2525 @@
+sussex, uk	5275222
+heredia, costa rica	3623486
+tasikmalaya	1624647
+indonesia raya	1258292
+columbia, mo	4381982
+rome, italy	3169070
+nottingham	2641170
+salvador, bahia	3450554
+praia grande - sp	3452465
+oxford, oh	4520760
+kassel	2892518
+winona, mn	5053156
+dhaka, bangladesh	1185241
+inglewood, ca	5359488
+wichita, ks	4281730
+paris	2988507
+helsinki, finland	658225
+seoul korea	1835848
+irvine, ca	5359777
+ellicott city, md	4354265
+saitama, japan	6940394
+brownsville, tx	4676740
+st.petersburg	498817
+sydney, nsw, australia	2147714
+chennai	1264527
+orange, california	5379513
+chicago, il	4887398
+denver, co, usa	5419384
+rolla, mo	4406282
+corvallis, oregon	5720727
+new orleans, louisiana	4335045
+brookline, ma	4931482
+new orleans, la	4335045
+caracas venezuela	3646738
+calgary, canada	5913490
+burlington, nc	4458228
+zagreb, croatia	6618983
+seville, spain	2510911
+bordeaux, france	3031582
+nancy, france	2990999
+santa fe, argentina	3836277
+tilburg, the netherlands	2746301
+salt lake city, ut	5780993
+tulsa, oklahoma	4553433
+venus	4739052
+manchester, england	2643123
+arnhem, the netherlands	2759661
+jamaica	3556406
+grand rapids, mi	4994358
+anchorage, alaska	5879400
+paducah, ky	4048662
+samara	499099
+rouen	2982652
+ibaraki, japan	1862033
+quito	3652462
+tempe	5317058
+inglewood	5359488
+asheville, north carolina	4453066
+bradenton, fl	4148708
+mcallen, texas	4709796
+kitchener, ontario, canada	5992996
+sheffield	2638077
+belo horizonte-mg	3470127
+rio claro - sp	3451234
+saint-petersburg, russia	498817
+the world wide web	2643743
+reston, va	4781530
+chiapas	3531013
+gurgaon, india	1270642
+des moines	4853828
+albuquerque	5454711
+china	1816670
+valdivia, chile	3868707
+berlin 	2950159
+virginia beach, va	4791259
+williamsburg, va	4793846
+bristol, ct	5282835
+ames, ia	4846834
+antofagasta, chile	3899539
+istanbul/turkey	745044
+tallahassee, florida	4174715
+santos - sp	3449433
+bath, uk	2656173
+jakarta indonesia	1642911
+baltimore, md, usa	4347778
+menlo park, ca	5372223
+yuma, az	5322053
+middlesbrough	2642607
+la, ca	5368361
+tel aviv	293394
+bogota colombia	3688689
+vila velha	3445026
+vancouver canada	6173331
+montreal, quebec, canada	6077243
+hanoi	1581130
+bonn, germany	2946447
+cali	3687925
+shreveport, la	4341513
+guadalajara, jalisco, mexico	4005539
+salvador/bahia	3450554
+gothenburg	2711537
+wuppertal, germany	2805753
+uk 	3448439
+bh/mg	3469058
+padang	1633419
+calgary ab	5913490
+anchorage	5879400
+valdosta, ga	4228147
+berlin	2950159
+colorado usa	3465881
+kitchener, ontario	5992996
+ahmedabad	1279233
+bklyn	3652462
+arizona 	5551665
+maryland, usa	4361831
+sandy, ut	4578977
+ann arbor	4984247
+washington, d.c. 	4140963
+lincoln	2644487
+davao city	1715348
+st. paul	5045360
+ny, ny	5128581
+statesboro, ga	4224413
+la 	5368361
+cape town	3369157
+san francisco, california	5391959
+boynton beach, fl	4148677
+orlando, fl	4167147
+portsmouth, nh	5091383
+new delhi	1261481
+seattle	5809844
+lakewood	5800420
+szeged	715429
+tacoma, wa	5812944
+flagstaff, az	5294810
+yogyakarta	1621177
+louisville	4299276
+san francisco, ca.	5391959
+sapporo,japan	2128295
+mexico, d.f	3530597
+sydney, australia	2147714
+russia, novosibirsk	1496747
+wales, uk	2643743
+brea, ca	5330582
+constanta	683506
+new york/new jersey	5128581
+paris, ile-de-france, france	2988507
+midlands	934282
+redding, ca	5570160
+karachi	1174872
+arlington, virginia	4744709
+kingston, ontario	5992500
+tampa, fl 	4174757
+helsinki	658225
+fukuoka japan	1863967
+concord, nc	4461574
+kelowna, bc, canada	5990579
+baltimore, md.	4347778
+yokohama japan	1848354
+harlem	4158091
+baltimore, md	4347778
+baltimore, md 	4347778
+toronto, on canada	6167865
+las vegas,nv	5506956
+escondido, ca	5346827
+tampa, florida	4174757
+dallas tx	4684888
+mexico df	3530597
+praia grande	3452465
+downingtown, pa	5187232
+modesto	5373900
+rio de janeiro - brasil	3451190
+hereford	2647074
+doncaster	2651123
+london baby!	2643743
+pune, india	1259229
+portland, me	4975802
+henderson, nv	5505411
+sevilla, spain	2510911
+denver	5419384
+new orleans	4335045
+salisbury, md	4368711
+mooresville, nc	4480125
+washington, dc 	4140963
+wales	2634894
+londrina - pr	3458449
+eugene	5725846
+iowa	4862034
+lewisville, tx	4706057
+salem, or	5750162
+dallas, tx	4684888
+warrington, uk	2634739
+boca raton, fl	4148411
+maracaibo	3633009
+lakewood, colorado	5427946
+trondheim	3133880
+cordoba, argentina	3860259
+altamonte springs, fl	4145941
+rio grande do sul - brasil	3451138
+aachen, germany	3247449
+netherlands	2759794
+winston-salem, nc	4499612
+worthing	2633521
+garland, tx	4693003
+san antonio, tx.	4726206
+hampton, va	4762894
+windsor, ontario	6182962
+bonn	2946447
+milano, italy	3173435
+cairo, egypt	360630
+long beach, ca	5367929
+cedar rapids, iowa	4850751
+cluj-napoca	681290
+murcia	2513416
+toronto,canada	6167865
+montreal canada	6077243
+milan	3173435
+vilnius, lithuania	593116
+kolkata, india	1275004
+singapura	1880252
+veracruz	3514783
+london ontario	6058560
+kiev	703448
+kuwait	285787
+miami, fl	4164138
+goa	1263494
+russia, samara	499099
+ventura, ca	5405878
+edinburg, tx	4688275
+lansing, michigan	4998830
+clinton, ms	4422133
+seattle, wa, usa	5809844
+rj	3451190
+kiel	2891122
+arizona	3455786
+utrecht, the netherlands	2745912
+berlin, germany	2950159
+panama city, fl	4167694
+porto alegre 	3452925
+campinas sp	3467865
+the city	2643743
+makassar, sulawesi selatan	1622786
+rio grande	3451138
+queensland, australia	2152272
+atl	4180439
+harrogate	2647428
+magdeburg	2874545
+south shields	2637329
+austin,texas	4671654
+tijuana	3981609
+gainesville, florida	4156404
+joinville - sc	3459712
+aichi,japan	1850147
+minneapolis, minnesota	5037649
+lincoln, uk	2644487
+yorkshire, england	4794966
+los gatos, ca	5368518
+montgomery, alabama	4076784
+vitoria-gasteiz	3104499
+sioux falls, sd	5231851
+minneapolis, mn, usa	5037649
+genova	3176219
+presidente prudente	3452324
+woodstock, ga	4231874
+juiz de fora - mg	3459505
+tampa florida	4174757
+louisville, kentucky	4299276
+bern, switzerland	3078610
+daly city, ca	5341430
+aarhus, denmark	2624652
+augusta, ga	4180531
+bulacan	1723066
+brisbane, qld	2174003
+cebu city	1717512
+hollywood	5357527
+thessaloniki, greece	734077
+sioux falls	5231851
+geneva	2660646
+bowling green, oh	5147968
+augsburg	2954172
+san rafael, ca	5392567
+queretaro, mexico	3991164
+new york city 	5128581
+modena	3173331
+brasilia, brasil	3469058
+brazil 	3469058
+texas!	4736134
+texas 	4736134
+izmir, turkey	311046
+brazil.	4254884
+camarillo, ca	5333180
+toronto	6167865
+louisville, ky, usa	4299276
+kharkov	706483
+manhattan beach, ca	5370082
+drammen, norway	3159016
+where u wanna be	3652462
+lawrence, ks	4274277
+bandung-indonesia	1650357
+mangalore	1263780
+brasilia, brazil	3469058
+brasil, sp	3469058
+winston salem, nc	4499612
+ithaca, ny	5122432
+boston	4930956
+hackney, london	1796236
+memphis,tn	4641239
+arkansas, usa	4267661
+scranton, pa	5211303
+manhattan, new york	4274994
+southampton, england	2637487
+jakarta city	1642911
+san antonio tx	4726206
+tucson, az	5318313
+ottawa, on, canada	6094817
+san diego	5391811
+jakarta, id	1642911
+paso robles, ca	5381438
+freehold, nj	5098278
+guelph, ontario, canada	5967629
+seoul, korea	1835848
+yokohama, japan	1848354
+tyo	1850147
+appleton, wi	5244080
+prague, czech republic	3067696
+charlottesville, virginia	4752031
+bradford	2654993
+miami beach	4164143
+princeton, nj	5102922
+makati	1703417
+san diego, california	5391811
+london - uk	2643743
+baltimore maryland	4347778
+lancashire	2643743
+troy, ny	5141502
+penang	1735106
+detroit mi	4990729
+belo horizonte - mg	3470127
+sheffield, england	2638077
+san jose,ca	5392171
+tehran	112931
+frankfurt, germany	2925533
+juiz de fora	3459505
+san angelo, tx	5530022
+den haag	2747373
+porto alegre, brazil	3452925
+rochester, new york	5134086
+sydney, au	2147714
+orlando 	4167147
+west covina	5407933
+wilkes-barre, pa	5219488
+longview, texas	4707814
+jacksonville, florida	4160021
+rancho cucamonga	5385955
+coimbatore	1273865
+ruston, la	4339348
+new york city	5128581
+dc	4140963
+firenze	3176959
+eugene, oregon	5725846
+guatemala	3598132
+st. louis	4407066
+central pa	5789668
+austin,tx	4671654
+middle tennessee	4662170
+houten	2759794
+bangalore,india	1277333
+lincoln, nebraska	5072006
+braunschweig, germany	2945024
+gloucester, uk	2648404
+thessaloniki	734077
+ventura, california	5405878
+buenos aires, argentina.	3435910
+pittsburgh,pa	5206379
+fresno, ca	5350937
+strasbourg	2973783
+indianapolis, indiana	4259418
+santa ana	5392900
+cali - colombia	3687925
+san luis obispo, ca	5392323
+santa catarina - brasil	3469058
+bandung indonesia	1650357
+riverside, california	5387877
+north vancouver, bc	6090785
+brazil, sp	3469058
+nuremberg, germany	2861650
+earth!	5520687
+belfast, northern ireland	2655984
+royal oak, mi	5007804
+rio rancho, nm	5487811
+santiago-chile	3871336
+glasgow	2648579
+rockville, maryland	4367175
+phoenix, az	5308655
+kiev, ukraine	703448
+united arab emirates	292968
+manchester uk	2643123
+makati city, philippines	1703417
+jersey 	5099836
+brandon, ms	4419290
+new york, ny	5128581
+westchester county, ny	4916140
+waco, texas	4739526
+ottawa canada	6094817
+sacramento ca	5389489
+charlotte, north carolina	4460243
+londinium	2643743
+compton	5339066
+stuttgart	2825297
+las vegas	5506956
+newcastle, uk	2641673
+pinas	3653130
+liverpool uk	2644210
+phoenix, arizona	5308655
+beaverton, or	5713376
+caxias do sul - rs	3466537
+bergen op zoom	2759145
+tilburg	2746301
+youngstown, ohio	5177568
+chelmsford	2653266
+newcastle upon tyne, england	2641673
+edinburgh, uk	2650225
+the hague	2747373
+phoenix az	5308655
+.	112931
+monroe, la	4333669
+bengaluru	1277333
+graz, austria	2778067
+eindhoven, netherlands	2756253
+sevilla	2510911
+victorville	5406222
+budapest, hungary	3054643
+gold coast australia	2165087
+irvine	5359777
+manaus, brasil	3663517
+joinville/sc	3459712
+columbus, ga	4188985
+surabaya , indonesia	1625822
+duesseldorf, germany	2934246
+tokyo/japan	1850147
+houston, tx	4699066
+malang,indonesia	1636722
+manado, indonesia	1636544
+novo hamburgo - rs	3456068
+drachten	2756644
+bristol, england	2654675
+victoria, bc, canada	6174041
+omaha	5074472
+queens, new york	963516
+san juan	3837213
+suwon, korea	1835553
+minneapolis, mn	5037649
+mexico	3530597
+pekanbaru, indonesia	1631761
+melbourne, florida	4163971
+veenendaal	2745774
+perth australia	2063523
+bulacan, philippines	1723066
+atlanta, ga, usa	4180439
+cebu city, philippines	1717512
+maidstone	2643179
+oakland, ca	5378538
+atlantic city, nj	4500546
+raleigh, nc 	4487042
+saginaw, mi	5007989
+pleasanton, ca	5383777
+madison, wisconsin	5261457
+vladivostok	2013348
+jakarta, indonesia.	1642911
+petaling jaya, malaysia	1735158
+sacramento	5389489
+quincy, il	4247703
+milton keynes, uk	2642465
+kansas city	4393217
+melbourne, australia	2158177
+medellin, colombia	3674962
+columbus, ohio, usa	4509177
+braunschweig	2945024
+vigo	3105976
+fargo, nd	5059163
+palmerston north, new zealand	2185018
+new york city!	5128581
+butler, pa	5182534
+neptune	5101687
+wilmington, nc	4499379
+miramar, fl	4164601
+rome	3169070
+pembroke pines, fl	4168139
+memphis, tn	4641239
+roma	3169070
+wales uk	2634894
+turin, italy	3165524
+jersey shore	5195416
+west palm beach, fl	4177887
+edmonton	5946768
+roswell, ga	4219934
+fortaleza, brasil	3399415
+xalapa	3526617
+birmingham	2655603
+oakland ca	5378538
+scottsdale, az	5313457
+grand forks, nd	5059429
+reykjavik, iceland	3413829
+cardiff, wales	2653822
+christchurch, new zealand	2192362
+buitenzorg	1648473
+belfast	2655984
+virginia 	4791259
+brooklyn 	5148346
+brooklyn.	5148346
+depok, indonesia	1645524
+almere	2759879
+brazil, rio de janeiro	3451190
+torrance	5403022
+dallas, tx.	4684888
+houston, tx, usa	4699066
+quito, ecuador	3652462
+bronx,ny	1796236
+london, england	2643743
+natal	3394023
+san mateo, ca	5392423
+newcastle	2641673
+vancouver 	6173331
+brasil, rio de janeiro	3451190
+palermo	2523920
+beirut	276781
+springfield, il	4250542
+gifu	1863641
+saint john, nb	6138517
+seoul, s.korea	1835848
+baton rouge	4315588
+orlando	4167147
+chattanooga, tn	4612862
+oaxaca	3522507
+koblenz, germany	2886946
+indaiatuba	3461311
+passo fundo	3454857
+jakarta,indonesia	1642911
+boston, ma 	4930956
+st. petersburg	498817
+pittsburgh, pa	5206379
+binghamton, ny	5109177
+japon	1850147
+jupiter	4160610
+riverside,ca	5387877
+sacramento, ca	5389489
+new haven	4839366
+eau claire, wi	5251436
+fukuoka, japan	1863967
+baja california	3055685
+syracuse ny	5140405
+sacramento, california	5389489
+lahore	1172451
+midland, tx	5526337
+denver, co	5419384
+columbus	4509177
+sapporo japan	2128295
+silver spring, md	4369596
+jersey city	5099836
+pasadena, tx	4717782
+puerto montt, chile	3874960
+cork	2965140
+bangalore	1277333
+tucson, arizona	5318313
+taipei, taiwan	1668341
+oklahoma city, ok	4544349
+york, uk	2633352
+portland, or	5746545
+solihull	2637546
+braga, portugal	2742032
+curitiba 	3464975
+olinda	3393536
+cleveland,oh	5150529
+katy, tx	4702732
+jacksonville fl	4160021
+valdivia	3868707
+bucharest	683506
+ft. lauderdale, fl	4155966
+coimbra, portugal	2740637
+dublin,ireland	2964574
+rio de janeiro, br	3451190
+bath	2656173
+minneapolis minnesota	5037649
+salisbury	2638664
+cardiff	2653822
+amsterdam	2759794
+distrito federal	1796236
+sao paulo - brazil	3448439
+roseville, ca	5388881
+overland park, ks	4276873
+peoria, il	4905687
+ayr, scotland	2656708
+maracaibo, zulia	3633009
+toronto, ontario canada	6167865
+santa barbara	5392952
+nova	5128581
+veracruz, mexico	3514783
+nashua, nh	5090046
+akron, oh	5145476
+bloomington	5018739
+denver, colorado, usa	5419384
+utrecht, netherlands	2745912
+toledo ohio	5174035
+new york ny	5128581
+leiden	2751773
+amsterdam, noord-holland	2759794
+rio de janeiro	3451190
+rio de janeiro, brasil	3451190
+healdsburg, ca	5356012
+winnipeg, manitoba, canada	6183235
+florence, al	4062577
+bern	2661552
+long beach ca	5367929
+medan,indonesia	1214520
+tampico	3516355
+denver co	5419384
+eugene, or	5725846
+plymouth	2640194
+rio de janeiro, brazil	3451190
+aurora, colorado	5412347
+keller, tx	4702828
+marburg	2873759
+st. louis, mo, usa	4407066
+fremont, ca	5350734
+milano	3173435
+tampa, fl	4174757
+minas	3441665
+loughborough	2643567
+durham, north carolina	4464368
+las vegas 	5506956
+lund, sweden	2693678
+rio grande do sul	3451138
+adelaide	2078025
+woodbridge, va	4794457
+depok	1645524
+south africa	964137
+birmingham,al	4049979
+little rock, arkansas	4119403
+vilnius	593116
+east london	1006984
+ny	5128581
+akron, ohio	5145476
+queen city	4721041
+san antonio	4726206
+curitiba/pr	3464975
+atlanta, georgia 	4180439
+tlaxcala	3815415
+southlake, tx	4733313
+colorado springs, co	5417598
+phoenix	5308655
+san jose	5392171
+los angeles area	5368361
+bucaramanga	3688465
+logan, ut	5777544
+devon	2643743
+sf bay area	5391959
+cape town, south africa	3369157
+jeddah	105343
+frankfurt am main, germany	2925533
+jakarta selatan	1642911
+santa clarita	5393049
+san antonio,tx	4726206
+connecticut	6255149
+ottawa	6094817
+hollywood, fl	4158928
+mexico city 	3530597
+temuco, chile	3870011
+gulfport, ms	4428667
+louisville, ky	4299276
+stockholm, sweden	2673730
+omaha, nebraska	5074472
+glasgow, scotland	2648579
+cincinnati	4508722
+ankeny, ia	4846960
+copenhagen, denmark	2618425
+st. louis mo	4407066
+brisbane, australia	2174003
+salvador, ba	3450554
+samara, russia	499099
+jackson, michigan	4997384
+venice	4176380
+norway, oslo	3143244
+cambridge ma	4931972
+denver, colorado	5419384
+el paso, texas	5520993
+tampa	4174757
+columbia, maryland	4352053
+curitiba	3464975
+moscow city	524901
+montevideo	3441575
+preston, uk	2639912
+natal, rn	3394023
+bedford	2656046
+valencia, carabobo	3666326
+hannover, germany	2910831
+vegas	5506956
+houston tx	4699066
+palembang,indonesia	1633070
+edmonton alberta	5946768
+norwich, england	2641181
+east midlands	934282
+lancaster, uk	2644972
+wakefield	2634910
+manchester, england.	2643123
+san jose, california	5392171
+alicante	2521978
+san marcos, ca	5392368
+bahia	3450554
+cirebon, indonesia	1646170
+stanford, ca	5398563
+your mind	3423410
+blacksburg, va	4747845
+falls church, va	4758390
+antwerp	2803138
+barranquilla, colombia	3689147
+reading, pa	5207728
+laredo, tx	4705349
+wilmington, delaware	4145381
+kumamoto, japan	1858421
+guarulhos	3461786
+colorado springs	5417598
+calgary, alberta	5913490
+hamilton, ontario	5969785
+okinawa	1894616
+odessa, tx	5527554
+tallinn, estonia	588409
+virginia beach	4791259
+rio de janeiro/rj	3451190
+oaxaca, mexico	3522507
+downey, ca	5343858
+cambridgeshire	2653941
+chesterfield	2653225
+taipei	1668341
+stockton	5399020
+bedfordshire, uk	2656046
+savannah, ga	4221552
+kissimmee, fl	4160983
+durham	2650628
+watford	2634677
+zwijndrecht	2743493
+campinas, sp, brasil	3467865
+porto alegre - brasil	3452925
+trinidad	3902377
+monterrey	3995465
+rotherham	2639093
+suffolk, va	4788158
+athens	264371
+sunny southern california	5400075
+france	2988507
+glendale, arizona	5295985
+maastricht, the netherlands	2751283
+msk	524901
+peru	3171180
+calgary	5913490
+ksa	2468106
+grand junction, co	5423573
+kent, wa	5799625
+fort wayne, in	4920423
+bratislava	3060972
+marietta, ga	4207783
+oregon	5744253
+flo rida	4155726
+zapopan	3979770
+beverly hills, ca	5328041
+yogyakarta, indonesia	1621177
+centennial, co	5416541
+stockton, california	5399020
+knoxville tn	4634946
+novi sad, serbia	3194360
+tokyo	1850147
+curitiba-pr	3464975
+campina grande	3403642
+michigan!	4923531
+milton keynes, england	2642465
+new orleans, la.	4335045
+bogor, jawa barat	1648473
+paris (france)	2988507
+hiroshima	1862415
+atlanta 	4180439
+caracas, miranda	3646738
+caracas, venezuela	3646738
+poughkeepsie, ny	5132143
+hamilton ontario	5969785
+davao city, philippines	1715348
+windsor, uk	2633842
+cambridgeshire, uk	2653941
+milwaukee wi	5263045
+marseille, france	2995469
+oslo	3143244
+indianapolis, in, usa	4259418
+phoenix 	5308655
+haarlem	2755003
+vancouver	6173331
+san antonio, tx	4726206
+nyc	5128581
+springfield	4250542
+ridderkerk	2748172
+edinburgh	2650225
+cincinnati oh	4508722
+washington, d.c.	4140963
+hartford, ct	4835797
+barcelona, spain	3128760
+cincinnati ohio	4508722
+salvador, bahia, brasil	3450554
+campo grande, ms, brasil	3467747
+san angelo, texas	5530022
+san francisco bay area	5391959
+portland,oregon	5746545
+metro detroit	1635283
+round rock, tx	4724129
+colima	4013516
+lake charles, la	4330236
+sp	3469058
+corona	5339631
+florida!	5117451
+ny 	5128581
+sf	5391959
+vancouver, bc 	6173331
+north vancouver	6090785
+lyon, france	2996944
+kansas city, mo	4393217
+madrid, spain	3117735
+tucson az	5318313
+johannesburg, south africa	993800
+boston, mass.	4930956
+balikpapan	1650527
+greenville, nc	4469160
+cambridge, uk	2653941
+kanazawa	1860243
+den haag, nederland	2747373
+yorkshire	2633352
+lakewood, ca	5364855
+winnipeg	6183235
+munich, germany	2867714
+norway	4973840
+brazil - rio de janeiro	3451190
+texas	4736134
+green bay	5254962
+cali, colombia	3687925
+kobe, japan	1859171
+perth, wa	2063523
+campo grande ms	3467747
+phx, az	5308655
+chino hills	5336545
+semarang,indonesia	1627896
+hamilton	5969785
+la crosse, wi	5258957
+groningen	2755251
+wirral	2643743
+ft. lauderdale	4155966
+malang	1636722
+grand rapids, michigan	4994358
+deutschland	2781023
+asheville, nc	4453066
+barrie, ontario	5894171
+stockholm	2673730
+north jersey	5099836
+gold coast	2165087
+owasso, ok	4547407
+encinitas, ca	5346646
+athens, greece	264371
+alicante, spain	2521978
+zurich	2657896
+d.f.	3530597
+leicester, uk	2644668
+jena	2895044
+lexington, ky	4297983
+antalya	323777
+albany, ga	4179320
+iasi	675810
+tel aviv, israel	293394
+chile 	739636
+canada	4003211
+ohio, usa	1796236
+tsukuba, japan	2110683
+saskatoon, sk	6141256
+braga	2742032
+college park, md	4351977
+kent	5380184
+iowa city, ia	4862034
+yogyakarta,indonesia	1621177
+visalia, ca	5406567
+mar del plata	3430863
+hull	2645425
+tamworth	2636276
+santa monica, california	5393212
+aberystwyth	2657782
+waterbury, ct	4845193
+turkiye	1796236
+brookings, sd	5226534
+toronto canada	6167865
+delft, the netherlands	2757345
+bekasi	1649378
+whittier	5409059
+boston area	4930956
+pune	1259229
+raleigh, nc, usa	4487042
+brasil	3469058
+oxford, england	2640729
+santa monica, ca	5393212
+porto alegre - rs	3452925
+livingston	2644204
+raleigh	4487042
+norfolk, england	4776222
+chicago illinois	4887398
+el paso texas	5520993
+charleston	4574324
+sorocaba sp	3447399
+newport beach, california	5376890
+haarlem, the netherlands	2755003
+columbus,ohio	4509177
+americana	3472343
+perth, australia	2063523
+melbourne, aus	2158177
+nepa	1261517
+swindon, uk	2636389
+fortaleza-ce	3399415
+southern california	5332748
+hayward, ca	5355933
+riga, latvia	456172
+austin, texas, usa	4671654
+fort smith, ar	4111410
+carson	5334519
+chi-city	4887398
+republic of korea	1835848
+new castle, pa	5203127
+scarborough	2638419
+durban, south africa	964137
+manchester, uk	2643123
+decatur, ga	4191124
+baton rouge, louisiana	4315588
+pittsburgh	5206379
+moscow	524901
+cornwall	5928065
+toronto, canada	6167865
+tulsa,ok	4553433
+surabaya, indonesia	1625822
+troy, mi	5012639
+kuching	1735634
+thai	1736309
+topeka, kansas	4280539
+concord, nh	5084868
+surabaya - indonesia	1625822
+tulsa, ok	4553433
+osasco	3455775
+barquisimeto	3648522
+alagoas	3395395
+billings, mt	5640350
+bursa	750269
+humble, tx	4699442
+davis, ca	5341704
+stockport	2636882
+earth.	5520687
+tangerang, banten	1625084
+russia, chelyabinsk	1508291
+seoul. korea	1835848
+va beach	4791259
+edinburg, texas	4688275
+arica, chile	3899361
+las vegas, nv	5506956
+stockton, ca	5399020
+roanoke, va	4782167
+tuscaloosa	4094455
+wiesbaden	2809346
+roma, italia	3169070
+houston,tx	4699066
+windsor	2633842
+provo, ut	5780026
+warsaw	756135
+westerville, ohio	5176472
+toluca	3515302
+irving, texas	4700168
+sp - brasil	3448439
+seattle, washington, usa	5809844
+olympia, wa	5805687
+atlanta, georgia	4180439
+kansas city, mo.	4393217
+malta	5664486
+charlottesville, va	4752031
+rj - brasil	3451190
+moncton, nb	6076211
+bentonville, ar	4101260
+santiago	3871336
+norman	4543762
+cordoba	3860259
+nieuwegein	2750325
+schenectady, ny	5136454
+semarang	1627896
+buenos aires 	3435910
+curitiba - pr - brasil	3464975
+hamburg / germany	2911298
+trivandrum	1254163
+ankara/turkey	323786
+hoboken, nj	5099133
+brno	3078610
+south wales, uk	2634894
+madison, wi, usa	5261457
+rio de janeiro, rj	3451190
+jakarta	1642911
+livermore, ca	5367440
+ljubljana, slovenia	3196359
+indonesia, jakarta	1642911
+chennai, india	1264527
+montes claros	3456814
+sacramento, ca.	5389489
+porto alegre - rs - brasil	3452925
+madison	5261457
+bakersfield ca	5325738
+bandung, indonesia	1650357
+leicester	2644668
+swansea, wales	2636432
+modesto, ca	5373900
+milledgeville, ga	4209448
+wonderland.	5355782
+colombo	1248991
+kuala lumpur, malaysia	1735161
+sidoarjo	1627253
+casablanca	2553604
+volterra, italy	3163962
+toronto, ontario	6167865
+seattle, washington	5809844
+curitiba - pr	3464975
+goiania	3462377
+rennes, france	2983990
+hyderabad,india	1269843
+sugar land, tx	4734825
+phuket	1151254
+purwokerto	1630328
+san jose, ca, usa	5392171
+boston 	4930956
+mcallen, tx	4709796
+tempe, az	5317058
+laguna	5364271
+nola	4335045
+valencia, spain	2509954
+germany, hamburg	2911298
+alkmaar	2759899
+lodi, ca	5367565
+dresden, germany	2935022
+cheshire	2643743
+tucson arizona	5318313
+recife	3390760
+warner robins, ga	4229476
+hull, uk	2645425
+solo, indonesia	1625812
+lima - peru	3936456
+sao paulo, brazil	3448439
+san salvador	3583361
+cologne	2886242
+jakarta, indonesia	1642911
+lausanne	2659994
+volta redonda - rj	3444876
+cleveland ohio	5150529
+rio de janeiro 	3451190
+rio de janeiro.	3451190
+knoxville	4634946
+honolulu, hi	5856195
+plymouth, ma	4947597
+zacatecas	3979844
+bath, england	2656173
+sydney, australia.	2147714
+mclean, va	4772354
+melbourne, australia 	2158177
+edwardsville, il	4237717
+jakarta-indonesia	1642911
+loveland, co	5579368
+carson city, nv	5501344
+albuquerque nm	5454711
+jp	1850147
+paris, france.	2988507
+waterloo, ontario	6176823
+chihuahua	4014338
+hokkaido, japan	2128295
+wichita falls, tx	4741752
+england, uk	4110001
+st. paul, minnesota	5045360
+surabaya,indonesia	1625822
+evanston, il	4891382
+talca, chile	3870294
+columbia, sc	4575352
+dade county	4152695
+manila, ph	1701668
+dki jakarta	1642911
+san luis obispo	5392323
+los angeles.	5368361
+manila, philippines	1701668
+los angeles!	5368361
+los angeles 	5368361
+brasil, rj	3469058
+moreno valley	5374732
+carmel, in	4255466
+gilbert, az	5295903
+wien	2761369
+naples, florida	4165565
+atlanta ga	4180439
+chico, ca	5336269
+cirebon	1646170
+peterborough, uk	2640354
+fairbanks, alaska	5861897
+corpus christi	4683416
+worcestershire	2633563
+wausau, wi	5278120
+little rock	4119403
+chicago il	4887398
+los angeles, california	5368361
+bryan, tx	4677008
+jackson, tn	4632595
+paris - france	2988507
+burlington, vermont	5234372
+leeds, uk	2644688
+stirling, scotland	2636910
+fairfield, ct	4834157
+shenzhen,china	1795565
+birmingham, alabama	4049979
+porto alegre, brasil	3452925
+santa barbara, ca	5392952
+chicago area	4887398
+wellington, nz	2179537
+oklahoma city	4544349
+helena, mt	5656882
+dublin ireland	2964574
+brasov, romania	683844
+sonoma county, ca	5397095
+patos de minas	3454783
+london, uk	2643743
+teheran	112931
+annapolis	4347242
+fresno, california	5350937
+guadalajara	4005539
+tupelo, ms	4448903
+manila	1701668
+mallorca	3117735
+kent, uk	5799625
+pasadena, ca	5381396
+semarang, jawa tengah	1627896
+lima-peru	3936456
+bristol	2654675
+oceanside	5378771
+san jose, ca	5392171
+melbourne, fl	4163971
+sunny san diego	5391811
+chattanooga tn	4612862
+flint, michigan	4992982
+utrecht, nl	2745912
+caracas	3646738
+monterrey, n.l.	3995465
+beijing,china	1816670
+madison wi	5261457
+breda	2758401
+brooklyn,ny	5148346
+nagpur	1262180
+sunnyvale	5400075
+colorado springs, colorado	5417598
+cheltenham	2653261
+zaragoza, spain	3104324
+brisbane	2174003
+mexico city, mexico	3530597
+makassar	1622786
+new york city, ny	5128581
+park city, utah	5779451
+san antonio,texas	4726206
+kennesaw, ga	4203696
+stavanger, norway	3137115
+coventry, england	2652221
+santiago chile	3871336
+pasadena	5381396
+perth	2063523
+hollywood, ca	5357527
+emmen	2756136
+curitiba, brasil	3464975
+noida	7279746
+delhi	1273294
+kediri	1640660
+virginia	4252071
+hermosa beach, ca	5356521
+worcester, uk	2633563
+apex, nc	4452808
+jakarta 	1642911
+mumbai, india	1275339
+anchorage, ak	5879400
+tracy, ca	5403191
+medellin	3674962
+jakarta timur	1642911
+florida usa	3682385
+nice	2990440
+serpong, banten	1627459
+sp - brazil	3448439
+toledo, oh	5174035
+lebanon	5197517
+london 	2643743
+ohio 	5204273
+wigan	2633948
+weston, fl	4178003
+london.	2643743
+shah alam	1732903
+sao paulo	3448439
+san carlos, ca	5391760
+southampton uk	2637487
+pittsburgh pa	5206379
+luxembourg	2960316
+heidelberg, germany	2907911
+sydney.	2147714
+watertown, ma	4954611
+chandigarh, india	1274746
+dresden	2935022
+zaandam	2744118
+coventry, uk	2652221
+lafayette, in	4922462
+toronto, ontario, canada	6167865
+new mexico	3530597
+phuket, thailand	1151254
+thailand	1609350
+katy, texas	4702732
+palmdale	5380698
+tacoma wa	5812944
+brighton	2654710
+belgrade, serbia	792680
+liverpool, england	2644210
+western australia	2063523
+rio de janeiro, rj, brasil	3451190
+oc	1853574
+nyc area	5128581
+napa, ca	5376095
+austin texas	4671654
+naperville, il	4903279
+hampshire, uk	2643741
+porto alegre-rs	3452925
+newark, de	4143861
+oklahoma city, oklahoma	4544349
+cambridge	2653941
+doetinchem	2756767
+clemson, sc	4574989
+lexington, ma	4941935
+boise, id	5586437
+essex	4354428
+hellevoetsluis	2754454
+lexington, kentucky	4297983
+caxias do sul	3466537
+aurora, co	5412347
+jerusalem	281184
+indiana.	5194868
+vancouver, b.c.	6173331
+columbus, oh, usa	4509177
+alphen aan den rijn	2759875
+hesperia, ca	5356576
+raleigh, north carolina	4487042
+san clemente, ca	5391791
+manaus - am	3663517
+philadelphia	4560349
+salt lake city	5780993
+shizuoka,japan	1851717
+italia	3169070
+palm coast, fl	4167538
+dekalb, il	4889553
+jamaica plain, ma	3556406
+somerset	5104755
+dubai, united arab emirates	292223
+washington dc metro area	4140963
+orlando, florida	4167147
+warrington	2634739
+henderson, nevada	5505411
+recife/pe	3390760
+schaumburg, il	4910713
+valencia - venezuela	3625549
+gainesville, fl	4156404
+blumenau-sc	6295148
+frederick, maryland	4355585
+seoul.korea	1835848
+shreveport, louisiana	4341513
+beverly hills	5328041
+columbus, ohio	4509177
+springfield, mo	4409896
+l.a.	5368361
+bogor,indonesia	1648473
+tel-aviv, israel	293394
+nijmegen, netherlands	2750053
+albany ny	5106834
+columbia, missouri	4381982
+cancun, mexico	3531673
+minneapolis	5037649
+kharkiv	706483
+yokohama	1848354
+toledo, ohio	5174035
+salt lake city, utah	5780993
+indianapolis,in	4259418
+sao paulo - brasil	3448439
+limeira	3458575
+oakland, ca, usa	5378538
+milan, italy	3173435
+bremen	2944388
+rosario, argentina	3838583
+pensacola, fl	4168228
+lincolnshire	2643743
+karlsruhe	2892794
+minneapolis mn	5037649
+berkeley, ca	5327684
+hamilton, on	5969785
+recife pe	3390760
+chicago, il.	4887398
+lima, peru	3936456
+melbourne, victoria	2158177
+rochester, ny	5134086
+shanghai,china	1796236
+porto alegre rs	3452925
+schiedam	2747596
+bronx new york	5110269
+independence, mo	4391812
+nagano	1856215
+twin cities, mn	5045360
+barcelona	3128760
+victorville, ca	5406222
+battle creek, mi	4985153
+reno, nevada	5511077
+racine, wi	5268249
+bolton	2655237
+scl	1796236
+brooklyn, ny, usa	1796236
+las vegas, nv.	5506956
+torrance, california	5403022
+green bay, wi	5254962
+melbourne, victoria, australia	2158177
+bucuresti	683506
+mnl	1819729
+salt lake city utah	5780993
+seattle washington	5809844
+the big apple	5128581
+greensboro nc	4469146
+bauru	3470279
+auckland	2193733
+jakarta - indonesia	1642911
+adana	325363
+leeuwarden, the netherlands	2751792
+arequipa	3947322
+baton rouge, la	4315588
+poway, ca	5384690
+london, ontario	2643743
+amsterdam, the netherlands	2759794
+utrecht, nederland	2745912
+brooklyn ny	5148346
+essex, uk	2649889
+orange, ca	5379513
+venezuela	3534432
+ny, usa	5128581
+moldova	677788
+kernersville, nc	4474221
+brasilia	3469058
+miami beach, fl	4164143
+bauru - sp	3470279
+somewhere 	3652462
+west des moines, iowa	4881346
+salvador/ba	3450554
+saint louis	4407066
+breda, the netherlands	2758401
+quebec	6325494
+lynwood	5369367
+western mass	3652462
+pelotas	3454244
+bogota - colombia	3688689
+west covina, ca	5407933
+panama city, panama	3703443
+norwich	2641181
+newcastle, australia	2155472
+berlin, berlin, deutschland	2950159
+newport beach, ca	5376890
+washington d.c.	4140963
+zaragoza	3104324
+stoke-on-trent	2636841
+iran	116996
+santa clarita, ca	5393049
+adelaide, sa	2078025
+bekasi, indonesia	1649378
+fishers, in	4257494
+greensboro, nc	4469146
+leesburg, va	4769125
+cebu, philippines	1717512
+belize	3582677
+milwaukee, wi	5263045
+tallahassee fl	4174715
+lucknow	1264733
+minsk	625144
+ashland, or	5325011
+houston 	4699066
+alexandria	361058
+sunderland, uk	2636531
+west hollywood	5408076
+lagos	2332459
+la plata, argentina	3432043
+florence	3176959
+bochum, germany	2947416
+west los angeles	5368361
+college park	4351977
+aliso viejo, ca	5323163
+spring, tx	1376280
+valencia, ca	3625549
+oxfordshire	2643743
+nantes, france	2990969
+palm springs, ca	5380668
+los angeles, usa	5368361
+santiago,chile	3871336
+minas gerais - brasil	3469058
+fort lauderdale, florida	4155966
+chula vista	5336899
+israel	281184
+inverness	2646088
+padang, indonesia	1633419
+tenerife	2511174
+brisbane, qld, australia	2174003
+brooklyn, new york	5128581
+manaus-am	3663517
+clearwater, florida	4151316
+auckland new zealand	2193733
+salvador	3450554
+long beach	5367929
+nebraska	5073661
+piracicaba - sp	3453643
+greenville, sc	4580543
+hong kong	1819729
+muncie, indiana	4924006
+brasil-sp	4254884
+cascavel - pr	3402613
+rochester, mn	5043473
+valparaiso	3868626
+socal	675810
+chapel hill, nc	4460162
+west lafayette, indiana	4928096
+wolverhampton, uk	2633691
+dublin, ireland	2964574
+denton, texas	4685907
+washington state	4140963
+traverse city, michigan	5012495
+kansas city, missouri	4393217
+maracaibo, venezuela	3633009
+mainz	2874225
+veracruz mexico	3514783
+austin, texas	4671654
+houston, tx 	4699066
+johannesburg	993800
+vancouver,bc	6173331
+lakeland, fl	4161438
+york, pa	4562407
+seoul	1835848
+chicago.	4887398
+chicago 	4887398
+chicago!	4887398
+bkk	1609350
+freiburg	2925177
+palma de mallorca	2512989
+macon, ga	4207400
+fl	3682385
+toronto 	6167865
+ankara	323786
+tarragona	3108288
+eindhoven	2756253
+bogor	1648473
+zurich, switzerland	2657896
+germany, berlin	2950159
+victoria, australia	2158177
+boston, ma, usa	4930956
+indianapolis, in	4259418
+media, pa	4559575
+hattiesburg, ms	4429295
+tallahassee	4174715
+wake forest, nc	4497290
+victoria, bc	6174041
+salem, oregon	5750162
+saratoga springs, ny	5136334
+darlington	2651513
+albany, new york	5106834
+sapporo	2128295
+manchester, nh	5089178
+cracow, poland	3094802
+oswego, ny	5130081
+fort mill, sc	4578977
+burlingame, ca	5331920
+paris, france	2988507
+kingston, ontario, canada	5992500
+novosibirsk, russia	1496747
+argentina	3435910
+limerick	2962943
+norfolk	4776222
+arlington, va	4744709
+salamanca	3111108
+ogden, ut	5779206
+okc	4544349
+milwaukee, wi 	5263045
+oxford	2640729
+carbondale, il	4235193
+porto	2735943
+st louis, mo	4407066
+montclair, nj	5101334
+athens, oh	4505542
+dayton ohio	4509884
+newcastle upon tyne	2641673
+ciputat, banten	1646194
+darmstadt	2938913
+palo alto, ca	5380748
+england	2643743
+osaka	1853909
+san juan, puerto rico	4568127
+beaumont, texas	4672989
+portland	5746545
+detroit,mi	4990729
+boise, idaho	5586437
+mumbai,india	1275339
+busan, korea	1838524
+morgantown, wv	4815352
+kitchener, on	5992996
+martinsburg, wv	4813878
+newport beach	5376890
+tallinn	588409
+charlotte,nc	4460243
+sp, brazil	3448439
+the hague, netherlands	2747373
+lawrence	4274277
+orange county, ca.	5379513
+auburn, alabama	4830796
+lille, france	2998324
+oslo, norway	3143244
+porto alegre/rs	3452925
+finland	3682473
+bilbao	3128026
+tel-aviv	293394
+belgium	5245314
+indianapolis indiana	4259418
+santa monica	5393212
+durham, nc	4464368
+london uk	2643743
+rio de janeiro/brasil	3451190
+athens greece	264371
+pondok aren, banten	1642911
+sheffield, uk	2638077
+korea, seoul	1835848
+columbus oh	4509177
+victoria bc	6174041
+providence, ri	5224151
+yokohama,japan	1848354
+in the world	1850147
+mobile, alabama	4076598
+des moines, iowa	4853828
+sausalito, ca	5393611
+halifax, ns	6324729
+lancaster, pa	5197079
+warsaw, poland	756135
+everett, wa	5793933
+washington dc	4140963
+edmond, oklahoma	4535740
+king of prussia, pa	5196220
+glendale, ca	5352423
+london, on	6058560
+seoul, republic of korea	1835848
+corona, ca	5339631
+jambi	1642858
+malaga	2514256
+paderborn	2855745
+bloomington, in	4254679
+rs, brasil	3390760
+red bank, nj	5103159
+tunis	2464470
+recife, pe	3390760
+charlotte	4460243
+durham, nc, usa	4464368
+tilburg, netherlands	2746301
+alexandria, va	4744091
+macau	1821274
+curitiba, pr	3464975
+hillsboro, or	5731371
+wellington	2179537
+savannah, georgia	4221552
+palmdale, ca	5380698
+philly	4560349
+las vegas, nevada	5506956
+far far away	3469057
+murrieta, ca	5375911
+los angeles, ca 	5368361
+madison, wi	5261457
+santos-sp	3449433
+scotland	4490606
+los angeles, ca.	5368361
+santa maria	3450083
+grand rapids	4994358
+montevideo, uruguay	3441575
+campinas/sp	3467865
+utrecht	2745912
+columbus, georgia	4188985
+santos, sp	3449433
+munich/germany	2867714
+annapolis, maryland	4347242
+cary, nc	4459467
+san francisco, ca	5391959
+bogota-colombia	3688689
+limerick, ireland	2962943
+fontana, ca	5349755
+nagoya,japan	1856057
+orlando, fl.	4167147
+chiba,japan	2113015
+stevenage	2636940
+state college, pa	5213681
+southampton	2637487
+galway	2964180
+hengelo	2759794
+lincoln, ne	5072006
+cupertino, ca	5341145
+bandung - indonesia	1650357
+kl	1735161
+campo grande, ms	3467747
+cleveland, tn	4614088
+florida, us	3682385
+ocala, florida	4166673
+roosendaal	2747930
+essen, germany	2928810
+bradford, uk	2654993
+ontario, canada	5379439
+vancouver, canada	6173331
+mainz, germany	2874225
+bangkok,thailand	1609350
+lubbock, tx	5525577
+bremen, germany	2944388
+cologne, germany	2886242
+newark, nj	5101798
+surabaya	1625822
+cebu	1717512
+indonesia,jakarta	1642911
+fullerton	5351247
+st. paul, mn	5045360
+sacramento,ca	5389489
+regensburg	2849483
+chiba japan	2113015
+rotterdam	2747891
+california.	5332748
+des moines, ia	4853828
+amsterdam, noord-holland, nede	2759794
+reading, uk	2639577
+moreno valley, ca	5374732
+ames, iowa	4846834
+jogjakarta, indonesia	1621177
+buckinghamshire	2654410
+st louis	4407066
+knoxville, tennessee	4634946
+buenos aires - argentina	3435910
+pamplona	3114472
+stirling	2636910
+dayton, ohio	4509884
+wroclaw, poland	3081368
+karlsruhe, germany	2892794
+waterloo, ontario, canada	6176823
+belo horizonte - brazil	3470127
+kyoto,japan	1857910
+kalamazoo	4997787
+pontianak	1630789
+singapore!	1880252
+athens, georgia	4180386
+yogyakarta, yogyakarta	1621177
+decatur, il	4236895
+lisbon	2267057
+lisboa	2267057
+timisoara, romania	665087
+sligo, ireland	2961423
+nagoya, japan	1856057
+seattle, wa.	5809844
+fontana	5349755
+edinburgh, scotland	2650225
+toronto ontario	6167865
+brandon, fl	4148757
+hickory, nc	4470778
+fife, scotland	5794328
+toledo	5174035
+swansea	2636432
+solo	1625812
+los angeles, ca usa	5368361
+gaithersburg, md	4355843
+nashville	4644585
+issaquah, wa	5798487
+espoo, finland	660158
+high point, nc	4471025
+quezon city, philippines	1692201
+newcastle upon tyne, uk	2641673
+jackson, ms	4431410
+waco, tx	4739526
+hiroshima, japan	1862415
+west chester, pa	4562144
+recife, brazil	3390760
+jersey city, nj	5099836
+winchester	2633858
+inland empire	3423410
+caracas-venezuela	3646738
+alpharetta, ga	4179574
+frederick, md	4355585
+saskatoon	6141256
+naples, fl	4165565
+mountain view	5375478
+halifax, ns, canada	6324729
+baltimore	4347778
+jakarta, jakarta	1642911
+melbourne 	2158177
+canterbury, uk	2653877
+syracuse, ny	5140405
+ypsilanti, mi	5015688
+melbourne.	2158177
+sp, brasil	3448439
+erie, pa	5188843
+tennessee	4662170
+pittsburgh, pa, usa	5206379
+bournemouth, uk	2655095
+washington, d.c	4140963
+swindon	2636389
+leamington spa	2644737
+perth, scotland	2640358
+bucharest, romania	683506
+buenos aires	3435910
+san juan, pr	4568127
+laguna beach, ca	5364275
+richmond, va	4781708
+birmingham, uk	2655603
+global 	6153289
+malang, indonesia	1636722
+algeria	2507480
+bakersfield	5325738
+santa cruz, california	3904906
+chiangmai	1153671
+rochester, ny, usa	5134086
+monterrey mexico	3995465
+bandung 	1650357
+leeds, england	2644688
+calgary, ab canada	5913490
+kalmar	2702261
+charlotte, nc	4460243
+vallejo	5405380
+st.louis	4407066
+aberdeen, scotland	2657832
+here there and everywhere	1642911
+mpls	5037649
+louisville ky	4299276
+salvador-ba	3450554
+clovis, ca	5338122
+maracaibo - venezuela	3633009
+banjarmasin	1650213
+london, ontario, canada	6058560
+columbus, oh	4509177
+portugal	3113082
+culver city, ca	5341114
+bologna, italy	3181928
+washington, dc	4140963
+rockford, il	4907959
+reno, nv	5511077
+tacoma	5812944
+palembang, indonesia	1633070
+enschede, the netherlands	2756071
+santos	3449433
+kelowna	5990579
+boston, ma	4930956
+worcester, ma	4956184
+highlands ranch, co	5425043
+cary, north carolina	4459467
+granada, spain	2517117
+middlesbrough, uk	2642607
+mexico city	3530597
+indianapolis	4259418
+d.c.	4140963
+minsk, belarus	625144
+bkk thailand	1609350
+costa rica	4012693
+dallas, texas	4684888
+myrtle beach, sc	4588718
+arlington, texas	4671240
+brussels	2800866
+southport	2637343
+porto velho	3662762
+novo hamburgo	3456068
+el salvador	1713911
+atlanta,ga	4180439
+queens ny	963516
+montreal	6077243
+abu dhabi	292968
+mannheim, germany	2873891
+rio grande do sul, brasil	3451138
+houston, texas	4699066
+hamilton, ontario, canada	5969785
+campo grande/ms	3467747
+indonesia 	1642911
+bandar lampung	1624917
+hermosillo	4004898
+santa maria - rs	3450083
+ukraine, kiev	703448
+lakeland, florida	4161438
+charleston, wv	4801859
+canton, ga	4186213
+sydney	2147714
+turku, finland	633679
+oldenburg	2857458
+...	112931
+bogor, indonesia	1648473
+cambridge uk	2653941
+waltham, ma	4954380
+milwaukee,wi	5263045
+manaus/am	3663517
+macon, georgia	4207400
+carolina, puerto rico	4563243
+new york 	5128581
+new york!	5128581
+abilene, tx	4669635
+jacksonville	4160021
+brasil - sp	3469058
+guadalajara, jalisco	4005539
+dc area	4140963
+amsterdam, netherlands	2759794
+pittsburgh 	5206379
+miami	4164138
+harlem, new york	4158091
+nairobi	184745
+mesa, arizona	5304391
+nijmegen	2750053
+sapporo, japan	2128295
+wichita falls, texas	4741752
+miami, fl.	4164138
+calgary, alberta canada	5913490
+trondheim, norway	3133880
+nyc, usa	5128581
+nicaragua	3617052
+new delhi, india	1261481
+richmond va	4781708
+bronx ny	5110269
+qatar	120678
+vancouver, british columbia	6173331
+chiang mai, thailand	1153671
+surakarta	1625812
+brighton uk	2654710
+providence	5224151
+district of columbia	4140963
+philadelphia, pa	4560349
+ghent, belgium	2797656
+longview, tx	4707814
+bangalore, india	1277333
+jacksonville, nc	4473083
+montpellier, france	2992166
+br	2950159
+bx	3652462
+cimahi	1646448
+culver city	5341114
+marietta, georgia	4207783
+edmonton, ab, canada	5946768
+norman, ok	4543762
+puyallup, wa	5807575
+mankato, mn	5036420
+springfield, missouri	4409896
+summerville, sc	4597919
+melbourne	2158177
+birmingham, england	2655603
+lawrence, kansas	4274277
+virginia beach, virginia	4791259
+candy mountain	2950159
+ann arbor, mi	4984247
+long island ny	5128581
+hamburg, germany	2911298
+leeds, united kingdom	2644688
+russia, saint-petersburg	498817
+brentwood, ca	5330642
+bekasi, jawa barat	1649378
+london,uk	2643743
+delhi, india	1273294
+st. petersburg, russia	498817
+ontario	5379439
+budapest	3054643
+charleston sc	4574324
+atlanta, ga usa	4180439
+kumamoto	1858421
+la puente	5364066
+greenville sc	4580543
+madrid	3117735
+hobart, tasmania	2163355
+sarasota, fl	4172131
+vienna	2761369
+adelaide, australia	2078025
+sorocaba/sp	3447399
+san diego 	5391811
+waukesha, wi	5278052
+porto alegre	3452925
+raleigh, nc	4487042
+bloomington, indiana	4254679
+guayaquil, ecuador	3657509
+padova	3171728
+birmingham, al 	2655603
+valencia, venezuela	3625549
+joinville	3459712
+semarang, indonesia	1627896
+mckinney, texas	4710178
+kansas city, ks	4273837
+phoenix,az	5308655
+new braunfels, tx	4714131
+oxford, uk	2640729
+rostock	2844588
+marseille	2995469
+southfield, mi	5010636
+bristol, uk	2654675
+killeen, texas	4703223
+cleveland	5150529
+new jersey/new york	5099836
+philadelphia 	4560349
+the valley	3573374
+campinas-sp	3467865
+santos/sp	3449433
+memphis, tennessee	4641239
+calgary, ab	5913490
+boulder, co	5574991
+kingston, on	5992500
+chicago, il 	4887398
+santa fe	3836277
+laredo, texas	4705349
+oshkosh, wi	5265838
+riyadh, saudi arabia	108410
+san diego california	5391811
+northern california	4350049
+manhattan	4274994
+san diego ca	5391811
+chester	2653228
+gurgaon	1270642
+belo horizonte/mg	3470127
+kansas	4393217
+kansai	1514889
+danbury, ct	4832353
+st. petersburg, fl	4171563
+brasil - rio de janeiro	3451190
+st albans	2638867
+southside	4091058
+nyc/nj	5128581
+jacksonville,fl	4160021
+champaign, il	4887158
+bandung	1650357
+manchester 	2643123
+delft	2757345
+fayetteville	4110486
+mexico, d.f.	3530597
+vila velha - es	3445026
+cheltenham, uk	2653261
+new delhi,india	1261481
+winchester, va	4794120
+amersfoort	2759821
+miami florida	4164138
+christchurch	2192362
+redmond, wa	5808079
+okinawa, japan	1894616
+lille	2998324
+orlando, fl, usa	4167147
+shanghai	1796236
+toronto, on	6167865
+nashville tn	4644585
+fortaleza, brazil	3399415
+nippon	1850147
+grenoble, france	3014728
+pelotas - rs	3454244
+brno, czech republic	3078610
+cedar falls, ia	4850699
+perth, western australia	2063523
+cambridge, ma	4931972
+beirut, lebanon	276781
+spokane, wa	5811696
+tulsa	4553433
+merced, ca	5372253
+vancouver, bc, canada	6173331
+nairobi, kenya	184745
+new hampshire, usa	4895016
+brighton, england	2654710
+miami fl	4164138
+stillwater, ok	4552215
+fukuoka	1863967
+americana - sp	3472343
+halifax, canada	6324729
+brunei	1820906
+longmont, colorado	5579276
+milano, italia	3173435
+bournemouth	2655095
+santa clara, ca	5393015
+depok,indonesia	1645524
+rialto, ca	5387288
+warszawa	756135
+tokyo 	1850147
+tokyo!	1850147
+northumberland	5203859
+halifax, nova scotia, canada	6324729
+bogota	3688689
+tokyo, jp	1850147
+copenhagen	2618425
+sydney, aus	2147714
+daejeon, korea	1835235
+chicago	4887398
+maine, usa	4517441
+round rock, texas	4724129
+richmond	4781708
+bilbao, spain	3128026
+huntington, wv	4809537
+oak park, il	4904381
+singapore 	1880252
+londrina	3458449
+albuquerque, nm	5454711
+chiba, japan	2113015
+cincinnati, oh	4508722
+singapore.	1880252
+hobart	2163355
+ghent	2797656
+jackson ms	4431410
+newton, ma	4945283
+chi city	4887398
+washington, usa	4140963
+kocaeli	745028
+gent	2797656
+syracuse, new york	5140405
+little rock, ar	4119403
+santa ana, california	5392900
+derby	2651347
+venlo	2745641
+montpellier	2992166
+portland, oregon	5746545
+londres	2643743
+las vegas nevada	5506956
+flint, mi	4992982
+beverly, ma	4930505
+yamagata	2110556
+san francisco	5391959
+tokyo, japan	1850147
+lima	3936456
+morelia	3995402
+chicago,illinois	4887398
+tampa bay	4174757
+mendoza	3435910
+cagliari	2525473
+peoria, az	5308480
+nagoya	1856057
+maryland.	4361831
+riverside, ca	5387877
+dayton, oh	4509884
+campina grande - pb	3403642
+muscat, oman	287286
+portland, maine	4975802
+honolulu, hawaii	5856195
+devon, england	5938801
+providence, rhode island	5224151
+east lansing, michigan	4991640
+evansville, in	4257227
+ontario,canada	5379439
+islamabad	1205733
+steamboat springs, co	5582371
+guadalajara jalisco	4005539
+seattle, usa	5809844
+kobe japan	1859171
+baltimore, maryland	4347778
+birmingham uk	2655603
+lagos,nigeria	2332459
+beijing	1816670
+yonkers, ny	5145215
+san bernardino, ca	5391710
+aalborg, denmark	2624886
+lafayette, la	4330145
+blumenau	3469968
+phoenix arizona	5308655
+bangkok, thailand	1609350
+hongkong	1819729
+torino	3165524
+hampshire	4895016
+buenos aires, argentina	3435910
+jerusalem, israel	281184
+bournemouth, england	2655095
+kolkata	1275004
+the hague, the netherlands	2747373
+nara	1855612
+dallas, tx, usa	4684888
+barendrecht	2759426
+corpus christi, tx	4683416
+angra dos reis	3472177
+manaus	3663517
+montreal, quebec	6077243
+santa cruz do sul	3450269
+hoorn	2753638
+colorado, usa	5417561
+wiltshire	2643743
+wheaton, il	4916288
+tangerang, indonesia	1625084
+vienna, austria	2761369
+leicester, england	2644668
+sendai	2111149
+garden grove, ca	5351515
+mogi das cruzes	3457001
+fortaleza - brasil	3399415
+philadelphia,pa	4560349
+vancouver, bc	6173331
+savannah,ga	4221552
+houston	4699066
+mannheim	2873891
+odense, denmark	2615876
+pernambuco - brasil	3390760
+strasbourg, france	2973783
+karlstad	2701680
+busan	1838524
+deventer	2756987
+fullerton, ca	5351247
+la	5368361
+nj, usa	5128581
+west des moines, ia	4881346
+wellington, new zealand	2179537
+puerto rico	3671348
+jackson, mississippi	4431410
+sao paulo, brasil	3448439
+somerset, uk	5104755
+portland or	5746545
+queens, ny	4721041
+kyiv, ukraine	703448
+zagreb	6618983
+knoxville, tn	4634946
+omaha, ne	5074472
+columbia, south carolina	4575352
+birmingham, al	4049979
+colchester	2652618
+luton	2643339
+salford	2638671
+detroit, mi	4990729
+san diego, ca	5391811
+college station, tx	4682464
+kharkov, ukraine	706483
+orem, utah	5779334
+atlanta, ga.	4180439
+rennes	2983990
+pune,india	1259229
+natick, ma	4944994
+sonoma, ca	5397095
+covina	5308655
+belgrade	792680
+belo horizonte mg	3470127
+sydney australia	2147714
+chicagoland	4887398
+croydon	5186053
+miami, florida	4164138
+recife, pernambuco	3390760
+joplin, mo	4392768
+sugar land, texas	4734825
+bozeman, montana	5641727
+hilversum, netherlands	2754064
+quebec city	6325494
+bombay	1275339
+nyc, ny	5128581
+normal, il	4903780
+santiago de chile	3871336
+bergen	3161732
+cwb	2651654
+bhopal	1275841
+fort worth, texas	4691930
+twin cities	4227521
+durban	1007311
+carrboro, nc	4459343
+jogja, indonesia	1621177
+riga	456172
+leiden, the netherlands	2751773
+south bend, indiana	4926563
+san jose ca	5392171
+waterloo	6176823
+portland, oregon, usa	5746545
+napoli	3172394
+sf, ca	5391959
+florida	3682385
+cali 	3531798
+austin	4671654
+santa catarina, brasil	3984583
+valparaiso, in	4927537
+kalamazoo, mi	4997787
+tokyo japan	1850147
+seattle, wa usa	5809844
+dothan, alabama	4059102
+moscow, russia	524901
+astoria, ny	5711847
+fort wayne, indiana	4920423
+victoria, bc canada	6174041
+north wales	5203788
+york, england	2633352
+saint paul, mn	5045360
+teresina-pi	3386496
+seattle, wa	5809844
+bologna	3181928
+norwich, uk	2641181
+penang, malaysia	1735106
+new york	5128581
+downey	5343858
+prague	3067696
+belo horizonte	3470127
+manassas, va	4771401
+malibu	5369906
+redondo beach	5386785
+spartanburg, sc	4597200
+rs - brasil	3451138
+wageningen	2745088
+rancho cucamonga, ca	5385955
+fort myers, fl	4155995
+hannover	2910831
+valencia	2509954
+sheffield uk	2638077
+bristol uk	2654675
+holland	2759794
+anaheim	5323810
+bolton, england	2655237
+monterrey, mexico	3995465
+whittier, ca	5409059
+mississauga, on	6093943
+brooklyn new york	4254985
+london england	2643743
+belo horizonte - brasil	3470127
+jacksonville, fl	4160021
+saint louis, mo	4407066
+mexico d.f.	3530597
+buffalo, ny	5110629
+college station, texas	4682464
+colombo, sri lanka	1248991
+dallas	4684888
+aberdeen	2657832
+galway, ireland	2964180
+curitiba, brazil	3464975
+bronx,new york	5110269
+meppel	2750947
+depok, jawa barat	1645524
+easton, pa	5188140
+kawasaki, japan	1859642
+broken arrow, ok	4531405
+jefferson city, mo	4392388
+la quinta, ca	5364079
+montana	729114
+medan	1214520
+brisbane, australia.	2174003
+los altos, ca	5368335
+fort worth, tx	4691930
+indy	4259418
+chester, uk	2653228
+lynchburg, va	4771075
+los angeles	5368361
+tokyo,japan	1850147
+bordeaux	3031582
+tampa fl	4174757
+malibu, ca	5369906
+duisburg	2934691
+manchester	2643123
+richmond, ca	5387428
+recife-pe	3390760
+brooklyn,new york	5148346
+lubbock	5525577
+mato grosso	3871336
+aurora, il	4883817
+natal/rn - brasil	3394023
+fresno	5350937
+rio de janeiro, brasil.	3451190
+bangkok thailand	1609350
+carlsbad, ca	5334223
+nashville,tn	4644585
+saskatoon, saskatchewan	6141256
+vancouver, wa	5814616
+northampton	2641430
+cuba	4383070
+lviv	702550
+vienna, va	4791160
+mexico d.f	3530597
+belo horizonte, brazil	3470127
+kochi	1859146
+norwalk, ct	4839822
+new york, new york	5128581
+kazakhstan	610613
+cincinnati, ohio	4508722
+petrolina-pe	3392242
+toulouse, france	2972315
+st. louis, mo	4407066
+denmark	2618425
+nijmegen, the netherlands	2750053
+san jose, costa rica	3621849
+wilmington, de	4145381
+tehran, iran	112931
+ohio	5204273
+ottawa, canada	6094817
+los angeles, ca	5368361
+zwolle, netherlands	2743477
+la serena, chile	3884373
+el paso, tx	5520993
+santa rosa	5393287
+new york,ny	5128581
+miami,florida	4164138
+liverpool, united kingdom	2644210
+gothenburg, sweden	2711537
+salvador - bahia	3450554
+almere, netherlands	2759879
+aracaju	3471872
+fortaleza, ce	3399415
+hoofddorp	2753801
+stone mountain, ga	4224745
+dundee	2650752
+winnipeg, mb	6183235
+bielefeld, germany	2949186
+santa rosa, california	5393287
+harlem, nyc	4158091
+amarillo, tx	5516233
+brentwood	5330642
+kiel, germany	2891122
+ocala, fl	4166673
+rockville, md	4367175
+new orleans,la	4335045
+aracaju - se	3471872
+washington, dc, usa	4140963
+biloxi, ms	4418478
+regina, sk	6119109
+high wycombe	2646914
+ann arbor, michigan	4984247
+boise	5586437
+florence, italy	3176959
+phoenix, az, usa	5308655
+fayetteville, nc	4466033
+aqui	3247449
+kelowna, bc	5990579
+stavanger	3137115
+colombia 	3686120
+santiago, chile.	3871336
+basel, switzerland	2661604
+derbyshire, uk	2643743
+bronx	5110269
+fukuoka,japan	1863967
+jersey	5099836
+limeira - sp	3458575
+chicago, illinois	4887398
+seoul, south korea	1835848
+batavia	1642911
+la la land	5368361
+sorocaba - sp	3447399
+simpsonville, sc	4595864
+santa rosa, ca	5393287
+lancashire, uk	2644972
+chicago, usa	4887398
+grand prairie, tx	4694482
+dortmund	2935517
+santo domingo	3492908
+fortaleza	3399415
+west michigan	4923531
+tokyo-japan	1850147
+louisiana	4396425
+nyc 	5128581
+chandigarh	1274746
+liverpool	2644210
+huntsville	4068590
+evansville, indiana	4257227
+ipswich	2646057
+austin, tx 	4671654
+hamburg	2911298
+atlanta	4180439
+austin, tx.	4671654
+glendale, az	5295985
+arvada, co	5412199
+bamberg	2952984
+minas gerais, brasil	3469058
+apeldoorn	2759706
+chiang mai	1153671
+myrtle beach, south carolina	4588718
+recife, brasil	3390760
+edmond, ok	4535740
+san diego, ca 	5391811
+fortaleza, ce, brasil	3399415
+san diego, ca.	5391811
+poland, warsaw	756135
+boston,ma	4930956
+new york city, new york	5128581
+santa fe, nm	5490263
+yorkshire, uk	2643743
+uberaba - mg	3445839
+cabo frio	3468615
+belo horizonte 	3470127
+phoenix, az usa	5308655
+kristiansand	3149318
+mckinney, tx	4710178
+grapevine, tx	4694568
+campinas	3469058
+ekaterinburg	1486209
+san bernardino	5391710
+l.a	5368361
+albuquerque, new mexico	5454711
+chattanooga	4612862
+basingstoke	2656192
+uppsala, sweden	2666199
+norfolk, virginia	4776222
+vancouver island	5814616
+denpasar	1645528
+port elizabeth, south africa	964420
+niigata	1855431
+den bosch	2747351
+savannah	4221552
+conway, ar	4106458
+sofia	727011
+cleveland, ohio	5150529
+blackpool	2655459
+bandung, jawa barat	1650357
+portland,or	5746545
+izmir	311046
+san antonio texas	4726206
+augusta ga	4180531
+montgomery, al	4076784
+russia, moscow	4925674
+teresina - pi	3386496
+tempe, arizona	5317058
+ljubljana	3196359
+riverside	5387877
+ashburn, va	4180316
+ogden, utah	5779206
+newark, new jersey	5101798
+belo horizonte, mg	3470127
+newnan, ga	4212684
+munich	2867714
+scottsdale, arizona	5313457
+curitiba, pr, brasil	3464975
+central texas	4736134
+cochin	1273874
+dubai	292223
+cambridge, massachusetts	4931972
+porto alegre, rs	3452925
+lost	5368676
+winnipeg, mb, canada	6183235
+osasco - sp	3455775
+makassar, indonesia	1622786
+england.	4110001
+windsor, ontario, canada	6182962
+germantown, md	4356050
+sarajevo	3191281
+san francisco, ca, usa	5391959
+belo horizonte - mg - brasil	3470127
+pittsburgh, pennsylvania	5206379
+the d	3652462
+kenosha, wi	5258393
+huntington beach, california	5358705
+concord, ca	5339111
+osaka, japan	1853909
+brighton, uk	2654710
+sunderland	2636531
+manchester england	2643123
+debrecen, hungary	721472
+charlotte, nc, usa	4460243
+tsukuba	2110683
+tangerang	1625084
+seattle wa	5809844
+delaware	5151891
+west palm beach	4177887
+kyiv	703448
+muskegon, mi	5003132
+pernambuco	3390760
+?	3652462
+forks, wa	5794761
+fort lauderdale	4155966
+bowling green, ky	4285268
+london, united kingdom	2643743
+chattanooga, tennessee	4612862
+recife, pe, brasil	3390760
+mesquite, tx	4710826
+miami,fl	4164138
+kingston, ny	5123477
+porto alegre, rs, brazil	3452925
+kent, england	2653877
+san antonio, texas	4726206
+mission viejo, ca	5373763
+florida, usa	3682385
+nottingham, uk	2641170
+denver,co	5419384
+greensboro	4469146
+oviedo	3114711
+charleston, sc	4574324
+lahore, pakistan	1172451
+washington	4140963
+frankfurt am main	2925533
+montreal, canada	6077243
+huntsville, al	4068590
+forks, washington	5794761
+novosibirsk	1496747
+lund	2693678
+petaling jaya	1735158
+needham, ma	4945055
+northamptonshire	2641430
+geelong	2165798
+cavite, philippines	1717641
+ontario canada	5379439
+valladolid, spain	3106672
+iowa city, iowa	4862034
+cedar rapids, ia	4850751
+hamilton, on, canada	5969785
+albany, ny	5106834
+wiesbaden, germany	2809346
+samarinda	1629001
+nederland	2759794
+san luis potosi	3985606
+santa fe, new mexico	5490263
+kennewick, wa	5799610
+brasil 	3469058
+hk	1819729
+newport news, va	4776024
+west hollywood, ca	5408076
+santa barbara, california	5392952
+memphis	4641239
+cleveland, oh	5150529
+golden, co	5423294
+tampere, finland	634963
+virginia usa	5051468
+norman, oklahoma	4543762
+wolverhampton	2633691
+auckland, new zealand	2193733
+vancouver, bc canada	6173331
+caracas,venezuela	3646738
+kingston	3489854
+thousand oaks, ca	5402405
+essex, england	2643743
+athens, ga	4180386
+freiburg, germany	2925177
+austin, tx	4671654
+groningen, nl	2755251
+ridgeland, ms	4443296
+bothell, wa	5787829
+oxnard, ca	5380184
+westminster	6930644
+ayr	2656708
+carlisle	2653775
+hollywood, florida	4158928
+culemborg	2757872
+hillsboro, oregon	5731371
+tallahassee, fl	4174715
+west yorkshire	4794966
+espirito santo	3445026
+bcn	3128760
+zoetermeer	2743856
+orlando fl	4167147
+holland, mi	4996248
+santa catarina	3984583
+gardena	5351549
+berlin germany	2950159
+frankfurt	2925533

@@ -15,7 +15,8 @@ standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   county:chararray,
   population:int,
   countyfips:chararray,
-  std_location:chararray);
+  std_location:chararray,
+  std_full_location:chararray);
   
 standard_us_cities = FOREACH standard_us_cities 
   GENERATE name, std_location, geonameid, latitude, longitude, population, countyfips;

@@ -2,6 +2,7 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
+-- You can replace '$INPUT' with 's3://where20/sample-tweets-*'
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
   tweet_id:chararray,

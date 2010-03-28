@@ -1,9 +1,10 @@
 -- generate 'locations_timezones': locations, top display string variant, and time zone, sorted by user count
+-- this script is used to generate inputs for the mechanical turk tasks
 REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
-tweets = LOAD 's3://where20/parsed-tweets-feb' as (
+tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
   tweet_id:chararray,
   tweet_created_at:chararray, 
@@ -26,7 +27,17 @@ tweets = LOAD 's3://where20/parsed-tweets-feb' as (
   place_country_code:chararray, 
   place_bounding_box_coordinates:chararray);
 
-filtered_tweets = FILTER tweets BY user_location != 'NULL' AND user_time_zone != 'NULL';   
+filtered_tweets = FILTER tweets BY user_location != 'NULL' AND user_time_zone != 'NULL';  
+
+filtered_tweets = FILTER filtered_tweets BY (user_time_zone == 'Central Time (US & Canada)')
+  OR (user_time_zone == 'Pacific Time (US & Canada)')
+  OR (user_time_zone == 'Eastern Time (US & Canada)')
+  OR (user_time_zone == 'Mountain Time (US & Canada)')
+  OR (user_time_zone == 'Hawaii')
+  OR (user_time_zone == 'Alaska')
+  OR (user_time_zone == 'Arizona')
+  OR (user_time_zone == 'Indiana (East)');
+ 
 location_time_zone = FOREACH filtered_tweets GENERATE LOWER(user_location) as location, user_time_zone, tweet_id;
 grouped_loc_time = GROUP location_time_zone BY (location,user_time_zone);
 loc_time = FOREACH grouped_loc_time GENERATE $0.location as location, $0.user_time_zone as user_time_zone, SIZE($1) as freq;
@@ -37,8 +48,19 @@ top_time_zone = FOREACH grouped_locs {
       sorted = LIMIT sorted 1;
       GENERATE $0 as location, FLATTEN(sorted.user_time_zone) as user_time_zone;}
 
-sorted_counts = LOAD 'global_location_counts' as (location:chararray, user_count:long);
-joined_names_zones = JOIN sorted_counts BY location, top_time_zone by location;
+sorted_counts = LOAD 'us_location_counts' as (location:chararray, user_count:long);
+-- filter these to remove previously standardized_locations
+std_location = LOAD 'standard_locations' as (
+  location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray);
+  
+std_location = FOREACH std_location GENERATE location, user_count;
+
+cogrouped_locs = cogroup std_locations by location, sorted_counts by location;
+-- find locations where count of std_locations is 0
+nonstandard_locs = filter cogrouped_locs by COUNT(std_locations) == 0;
+nonstandard_locs = foreach nonstandard_locs generate FLATTEN(sorted_counts);
+
+joined_names_zones = JOIN nonstandard_locs BY location, top_time_zone by location;
 
 locations_with_zones = FOREACH joined_names_zones GENERATE $0 as location, $3 as time_zone, $1 as user_count;
 sorted_loc_zone = ORDER locations_with_zones BY user_count DESC;

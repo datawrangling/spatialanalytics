@@ -19,7 +19,7 @@ Usage: $ ./parse_turk_responses.py -f data/Batch_213923_result.csv > output/loca
 
 # manual overrides for a few bad turk geonameid responses
 override_file = 'data/overrides.csv'
-OverrideReader = csv.DictReader(open(override_file, 'r'), delimiter=',')
+OverrideReader = csv.DictReader(open(override_file, 'rU'), delimiter=',')
 overrides ={}
 for data in OverrideReader:
   overrides[data['location']]=data['geonameid']

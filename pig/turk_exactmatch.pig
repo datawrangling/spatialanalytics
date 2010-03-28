@@ -22,7 +22,8 @@ standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
   county:chararray,
   population:int,
   countyfips:chararray,
-  std_location:chararray);
+  std_location:chararray,
+  std_full_location:chararray);
   
 --join geo mapping to standard_us_cities to get name, geonameid, population, countyfips  
 
