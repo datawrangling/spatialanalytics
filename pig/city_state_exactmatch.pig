@@ -1,5 +1,7 @@
 REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
+DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
+
 
 -- Exact match approach 1
 -- try direct mapping of "city name, state abbrev." to lower case tweet lcoation string
@@ -33,7 +35,16 @@ joined_names = JOIN location_counts BY location, standard_us_cities_abbrev BY ci
 city_state_abbrev_counts = FOREACH joined_names GENERATE $0 as location, $3 as std_location,
   $1 as user_count, $3 as geonameid, $4 as population, $5 as fips;
   
-city_state_counts = UNION city_state_abbrev_counts, city_state_counts; 
+city_state_counts = UNION city_state_abbrev_counts, city_state_counts;
+
+city_state_wo_space = FOREACH city_state_counts GENERATE REPLACE(location, ', ', ','), std_location,
+ user_count, geonameid, population, fips;
+
+city_state_wo_comma = FOREACH city_state_counts GENERATE REPLACE(REPLACE(location, ',', ' '), '  ', ' '), std_location,
+ user_count, geonameid, population, fips;
+ 
+city_state_counts = UNION city_state_counts, city_state_wo_space, city_state_wo_comma;
+ 
 
 rmf city_state_counts
 sorted_city_state_counts = ORDER city_state_counts BY population DESC;

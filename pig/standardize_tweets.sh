@@ -24,8 +24,10 @@ echo Generating list of unknown locations for turkers
 echo --------------------------
 pig -p INPUT=$INPUTFILES -l /mnt locations_timezones.pig
 rm /mnt/locations_timezones.csv
-hadoop fs -getmerge /locations_timezones /mnt/locations_timezones.csv
-# need to remove UT iphone strings then limit to top 8k...
+hadoop fs -getmerge /user/hadoop/locations_timezones /mnt/locations_timezones.csv
+# need to remove UT iphone strings then limit to top 8k for turkers...
+grep -i 'ÜT:' -v /mnt/locations_timezones.csv | head -8000 > /mnt/top_8k_us_locations.txt
+## TODO: remove any exact matches for countries, states, or state abbrev
 #
 #
 
