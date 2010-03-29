@@ -70,7 +70,7 @@ LOWER($0) as tweet_text;
 cp s3://where20demo/wikiphrases.pkl file:///mnt/
 
 DEFINE tweet_tokenizer `tweet_tokenizer.py`
-  SHIP ('tweet_tokenizer.py', 'nltkandyaml.mod', '/mnt/wikiphrases.pkl');
+  SHIP ('tweet_tokenizer.py', 'nltkandyaml.mod', '/mnt/wikiphrases.pkl', 'stopwords.txt');
   tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
   AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
    
