@@ -94,7 +94,7 @@ $0.hour as hour,
 $0.fipscode as fipscode,
 SIZE($1) as count;
 
-tweet_phrases = ORDER tweet_phrases BY phrase desc, (date, hour);
+tweet_phrases = ORDER tweet_phrases BY date, hour;
 
 rmf tweet_phrases
 store tweet_phrases into 'tweet_phrases';
