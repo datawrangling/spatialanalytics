@@ -13,17 +13,44 @@ h2. Part I: Location Preprocessing & Basic Statistics
 
 h3. Setting up our Hadoop cluster
 
-* Launch Pig Session using EMR
-* hcon.sh to set up web console on local machine:
+* Launch an interactive Pig Session using Elastic MapReduce and note the ec2 address (something like ec2-174-129-153-177.compute-1.amazonaws.com) 
+
+* Get the spatialanalytics code from github and use the hcon.sh script on your local machine to set up the Hadoop web UI in a browser window:
+
 <pre>
 	git clone git://github.com/datawrangling/spatialanalytics.git
 	cd spatialanalytics/
-	./util/hcon.sh ec2-204-236-250-39.compute-1.amazonaws.com
+	./util/hcon.sh ec2-174-129-153-177.compute-1.amazonaws.com
 </pre>	
-* ssh to the instance
-* sudo apt-get -y install git-core
-* cd /mnt
-* git clone git://github.com/datawrangling/spatialanalytics.git
+
+* ssh into the master Hadoop instance
+
+<pre>
+	skom:spatialanalytics pskomoroch$ ssh hadoop@ec2-174-129-153-177.compute-1.amazonaws.com
+	The authenticity of host 'ec2-174-129-153-177.compute-1.amazonaws.com (174.129.153.177)' can't be established.
+	RSA key fingerprint is 6d:b1:d6:48:db:37:61:df:b6:04:4a:93:eb:2d:1d:40.
+	Are you sure you want to continue connecting (yes/no)? yes
+	Warning: Permanently added 'ec2-174-129-153-177.compute-1.amazonaws.com,174.129.153.177' (RSA) to the list of known hosts.
+	Linux domU-12-31-39-0F-74-82 2.6.21.7-2.fc8xen #1 SMP Fri Feb 15 12:39:36 EST 2008 i686
+	--------------------------------------------------------------------------------
+
+	Welcome to Amazon Elastic MapReduce running Hadoop 0.18.3 and Debian/Lenny.
+
+	Hadoop is installed in /home/hadoop. Log files are in /mnt/var/log/hadoop. Check
+	/mnt/var/log/hadoop/steps for diagnosing step failures.
+
+	The Hadoop UI can be accessed via the command: lynx http://localhost:9100/
+
+	--------------------------------------------------------------------------------
+	hadoop@domU-12-31-39-0F-74-82:~$ 
+</pre>	
+
+* Install git and fetch the same spatialanalytics code on the Hadoop cluster:
+<pre>
+	sudo apt-get -y install git-core
+	cd /mnt
+	git clone git://github.com/datawrangling/spatialanalytics.git
+</pre>
 
 h3. Counting locations with Hadoop
 
