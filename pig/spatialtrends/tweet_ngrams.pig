@@ -4,13 +4,13 @@ DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
 -- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ -p MYBUCKET=where20 tweet_ngrams.pig
 
-cp file:///mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py s3://$MYBUCKET/tweet_tokenizer.py
-cp file:///mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod s3://$MYBUCKET/nltkandyaml.mod
-cp file:///mnt/spatialanalytics/pig/spatialtrends/stopwords.txt s3://$MYBUCKET/stopwords.txt
+--cp file:///mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py s3://where20demo/tweet_tokenizer.py
+--cp file:///mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod s3://where20demo/nltkandyaml.mod
+--cp file:///mnt/spatialanalytics/pig/spatialtrends/stopwords.txt s3://where20demo/stopwords.txt
 
-DEFINE tweet_tokenizer `tweet_tokenizer.py` cache('s3://$MYBUCKET/tweet_tokenizer.py#tweet_tokenizer.py', 
-'s3://$MYBUCKET/nltkandyaml.mod#nltkandyaml.mod',
-'s3://$MYBUCKET/stopwords.txt#stopwords.txt','s3://where20demo/wikiphrases.pkl#wikiphrases.pkl');   
+DEFINE tweet_tokenizer `tweet_tokenizer.py`
+    CACHE ('s3://where20demo/tweet_tokenizer.py#tweet_tokenizer.py','s3://where20demo/nltkandyaml.mod#nltkandyaml.mod',
+     's3://where20demo/stopwords.txt#stopwords.txt', 's3://where20demo/wikiphrases.pkl#wikiphrases.pkl');  
 
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
