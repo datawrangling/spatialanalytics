@@ -6,7 +6,7 @@ From the Workshop description:
 
 bq[fr]. "This workshop will focus on uncovering patterns and generating actionable insights from large datasets using spatial analytics. We will explore combining open government data with other location based information sources like Twitter. Participants will be guided through examples that use Hadoop and Amazon EC2 for scalable processing of location data. We will also cover some basics on spatial statistics, correlations, and trends along with how to visualize and communicate your results with open source tools."
 
-!http://where20.s3.amazonaws.com/images/twitter_users.png!
+!http://where20.s3.amazonaws.com/twitter_users.png!
 
 
 h2. Part I: Location Preprocessing & Basic Statistics
