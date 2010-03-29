@@ -6,12 +6,20 @@ From the Workshop description:
 
 bq[fr]. "This workshop will focus on uncovering patterns and generating actionable insights from large datasets using spatial analytics. We will explore combining open government data with other location based information sources like Twitter. Participants will be guided through examples that use Hadoop and Amazon EC2 for scalable processing of location data. We will also cover some basics on spatial statistics, correlations, and trends along with how to visualize and communicate your results with open source tools."
 
+!http://where20.s3.amazonaws.com/images/twitter_users.png!
+
+
 h2. Part I: Location Preprocessing & Basic Statistics
 
 h3. Setting up our Hadoop cluster
 
 * Launch Pig Session using EMR
-* hcon.sh to set up web console
+* hcon.sh to set up web console on local machine:
+<pre>
+	git clone git://github.com/datawrangling/spatialanalytics.git
+	cd spatialanalytics/
+	./util/hcon.sh ec2-204-236-250-39.compute-1.amazonaws.com
+</pre>	
 * ssh to the instance
 * sudo apt-get -y install git-core
 * cd /mnt
