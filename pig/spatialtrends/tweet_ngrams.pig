@@ -67,10 +67,13 @@ LOWER($0) as tweet_text;
 -- 06073 5391811 Wed Feb 10 04:50:26 +0000 2010  looooooooost!!
 
 -- fetch larger file from S3 for shipping to distributed cache
-cp s3://where20demo/wikiphrases.pkl file:///mnt/
+-- cp s3://where20demo/wikiphrases.pkl file:///mnt/
+cache('s3://where20demo/wikiphrases.pkl#wikiphrases.pkl')
 
 DEFINE tweet_tokenizer `tweet_tokenizer.py`
-  SHIP ('./tweet_tokenizer.py', './nltkandyaml.mod', '/mnt/wikiphrases.pkl', './stopwords.txt');
+  SHIP ('/mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py',
+   '/mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod', 
+   '/mnt/spatialanalytics/pig/spatialtrends/stopwords.txt');
   tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
   AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
    
