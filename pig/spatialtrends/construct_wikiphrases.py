@@ -10,6 +10,9 @@ s3cmd get --config=/root/.s3cfg -r s3://trendingtopics/archive/20100316/pages/ p
 cat pages/* | sed 's/\x01/\t/g' > pages-20100316.txt
 gzip pages-20100316.txt
 
+For the Where 2.0 workshop, instead of using this map side dictionary, we will join to the following table in Pig
+cut -f 1 page_lookups.txt | sed 's/\_/\ /g' > wikipedia_dictionary.txt
+
 This script constructs a python dictionary for use in tokenizing tweets
 using the Wikipedia page trend data
 

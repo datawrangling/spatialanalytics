@@ -10,7 +10,7 @@ cp file:///mnt/spatialanalytics/pig/spatialtrends/stopwords.txt s3://where20demo
 
 DEFINE tweet_tokenizer `tweet_tokenizer.py`
     CACHE ('s3://where20demo/tweet_tokenizer.py#tweet_tokenizer.py','s3://where20demo/nltkandyaml.mod#nltkandyaml.mod',
-     's3://where20demo/stopwords.txt#stopwords.txt','s3://where20demo/wikiphrases.pkl#wikiphrases.pkl');  
+     's3://where20demo/stopwords.txt#stopwords.txt');  
 
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
@@ -77,8 +77,20 @@ LOWER($0) as tweet_text;
 tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
   AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int);
    
-rmf tweet_ngrams
-store tweet_ngrams into 'tweet_ngrams';
+wikipedia_dictionary = LOAD 's3://where20demo/wikipedia_dictionary.txt.gz' as (
+  phrase:chararray);   
+   
+tweet_phrases = JOIN wikipedia_dictionary BY LOWER(phrase), tweet_ngrams BY ngram using "replicated";
+
+tweet_phrases = FOREACH tweet_phrases GENERATE
+$1 as phrase, $2 as fipscode, $3 as geonameid, $4 as date, $5 as hour;
+   
+rmf tweet_phrases
+store tweet_phrases into 'tweet_phrases';
+
+
+
+
 
 --sample output format
 -- i know	25025	4930956	2010-02-10	4

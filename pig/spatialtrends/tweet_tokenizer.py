@@ -34,10 +34,6 @@ importer = zipimport.zipimporter('nltkandyaml.mod')
 yaml = importer.load_module('yaml')
 nltk = importer.load_module('nltk')
 
-# load Wikipedia page title hash
-pkl_file = open('wikiphrases.pkl', 'rb')
-wikiphrases = pickle.load(pkl_file)
-
 # load stopword list
 stopwords = open('stopwords.txt','r').readlines()
 stopwords = [word.strip() for word in stopwords]
@@ -66,14 +62,13 @@ def find_ngrams(seq, n):
 def emit_phrases(ngrams, fipscode, geonameid, date, hour):
   '''Validate ngrams against wikipedia phrases and emit to stdout'''
   for ngram in ngrams:
-    if wikiphrases.has_key(ngram):
-      try:
-        #exclude numbers
-        int(ngram)
-      except:  
-        #exclude special chars
-        if len(ngram.strip()) > 1:
-          print '\t'.join([ngram, fipscode, geonameid, date, hour])  
+    try:
+      #exclude numbers
+      int(ngram)
+    except:  
+      #exclude special chars
+      if len(ngram.strip()) > 1:
+        print '\t'.join([ngram, fipscode, geonameid, date, hour])  
 
 for line in sys.stdin:
   try:
