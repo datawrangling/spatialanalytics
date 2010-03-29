@@ -2,9 +2,9 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
-%default INPUT s3://where20/sample-tweets-*
+--%default INPUT s3://where20demo/sample-tweets/
 
--- You can replace '$INPUT' with 's3://where20/sample-tweets-*'
+-- You can replace '$INPUT' with 's3://where20demo/sample-tweets/'
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
   tweet_id:chararray,

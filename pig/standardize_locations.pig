@@ -44,7 +44,7 @@ new_std_locations = foreach new_turk_locs generate FLATTEN(turk_counts);
 std_locations = UNION std_locations, new_std_locations;
 
 --- Need to remove Country/State names as std city locations:
-blacklist_states = LOAD 's3://where20/blacklist_states.txt' as (location:chararray);
+blacklist_states = LOAD 's3://where20demo/blacklist_states.txt' as (location:chararray);
 cogrouped_final = cogroup std_locations by location, blacklist_states by location;
 good_locs = filter cogrouped_final by COUNT(blacklist_states) == 0;
 final_std_locations = foreach good_locs generate FLATTEN(std_locations);

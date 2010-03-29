@@ -8,7 +8,7 @@ DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 location_counts = LOAD 'us_location_counts' as 
   (location:chararray, user_count:long);
 
-standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
+standard_us_cities = LOAD 's3://where20demo/standard_us_cities.txt' as (
   geonameid:int,
   name:chararray, 
   latitude:float,

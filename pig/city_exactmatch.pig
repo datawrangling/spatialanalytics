@@ -4,7 +4,7 @@ DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 -- Exact Match approach 2
 --- build list cityname->geoid/fips mappings based on most populated variant in US.
 --- group standard_us_cities by name, find top city variant by population
-standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
+standard_us_cities = LOAD 's3://where20demo/standard_us_cities.txt' as (
   geonameid:int,
   name:chararray, 
   latitude:float,

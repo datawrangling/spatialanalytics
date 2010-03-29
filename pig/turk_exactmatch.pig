@@ -5,7 +5,7 @@ DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 location_counts = LOAD 'us_location_counts' as (location:chararray, user_count:long);
 
 -- this file was produced by location_standardization/parse_turk_responses.py
-location_geo_mapping = LOAD 's3://where20/location_geo_mapping.txt' as (location:chararray, geonameid:int);
+location_geo_mapping = LOAD 's3://where20demo/location_geo_mapping.txt' as (location:chararray, geonameid:int);
 
 joined_names = JOIN location_counts BY location, location_geo_mapping BY location using "replicated";
 -- location:chararray, user_count:long, location:chararray, geonameid:int
@@ -14,7 +14,7 @@ joined_names = FOREACH joined_names GENERATE
   $1 as user_count, 
   $3 as geonameid;
 
-standard_us_cities = LOAD 's3://where20/standard_us_cities.txt' as (
+standard_us_cities = LOAD 's3://where20demo/standard_us_cities.txt' as (
   geonameid:int,
   name:chararray, 
   latitude:float,
