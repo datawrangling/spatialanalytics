@@ -3,7 +3,7 @@ DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 
 --%default INPUT s3://where20demo/sample-tweets/
 
--- $ pig -p INPUT=s3://where20demo/sample-tweets/ political_counts.pig
+-- $ pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ political_counts.pig
 
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
@@ -40,7 +40,6 @@ filtered_tweets = FILTER filtered_tweets
   OR (user_time_zone == 'Indiana (East)');
 
 filtered_tweets = FOREACH filtered_tweets GENERATE user_location, user_description;
-filtered_tweets = FILTER filtered_tweets BY (user_description matches '.*apache.*');
 
 SPLIT filtered_tweets INTO 
   conservative_tweets IF (LOWER(user_description) matches '.*conservative.*'), 
