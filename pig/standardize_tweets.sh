@@ -12,7 +12,7 @@ if [ -n "$1" ]; then 	# -n tests to see if the argument is non empty
 	INPUTFILES=$1
 fi
 
-STANDARDLOCATIONS=s3://where20demo/standard_us_cities.txt
+STANDARDLOCATIONS=s3://where20demo/standard_locations.txt
 if [ -n "$2" ]; then 	# -n tests to see if the argument is non empty
 	echo "location mapping input path provided, using for standardized location instead of sample data"
 	STANDARDLOCATIONS=$2
