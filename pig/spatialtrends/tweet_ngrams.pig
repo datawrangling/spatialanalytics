@@ -2,7 +2,7 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
--- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ -p MYBUCKET=where20 tweet_ngrams.pig
+-- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ tweet_ngrams.pig
 
 --cp file:///mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py s3://where20demo/tweet_tokenizer.py
 --cp file:///mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod s3://where20demo/nltkandyaml.mod
