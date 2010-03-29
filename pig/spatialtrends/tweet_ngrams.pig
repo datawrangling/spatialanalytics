@@ -62,16 +62,21 @@ $5 as geonameid,
 $2 as tweet_created_at,
 LOWER($0) as tweet_text;
 
-store std_location_tweets INTO 'std_location_tweets';
+-- sample format:
+-- 31055 5074472 Wed Feb 10 04:59:42 +0000 2010  thanks for coming to pub quiz steph jess ali and stacey!
+-- 06073 5391811 Wed Feb 10 04:50:26 +0000 2010  looooooooost!!
 
---DEFINE tweet_tokenizer `tweet_tokenizer.py`
---  SHIP ('tweet_tokenizer.py', 'nltkandyaml.mod', 's3://where20demo/wikiphrases.pkl');
---tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
---  AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
+DEFINE tweet_tokenizer `tweet_tokenizer.py`
+  SHIP ('tweet_tokenizer.py', 'nltkandyaml.mod', 's3://where20demo/wikiphrases.pkl');
+  tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
+  AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
    
---rmf tweet_ngrams
---store tweet_ngrams into 'tweet_ngrams';
+rmf tweet_ngrams
+store tweet_ngrams into 'tweet_ngrams';
 
-
+--sample output format
+-- i know	25025	4930956	2010-02-10	4	-61.17994
+-- people	36061	5128581	2010-02-10	2	-78982.27
+-- read	36061	5128581	2010-02-10	2	1398.9912
 
 

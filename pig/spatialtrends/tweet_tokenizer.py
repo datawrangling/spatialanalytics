@@ -3,6 +3,16 @@
 """
 tweet_tokenizer.py
 
+sample input format:
+-- 31055 5074472 Wed Feb 10 04:59:42 +0000 2010  thanks for coming to pub quiz steph jess ali and stacey!
+-- 06073 5391811 Wed Feb 10 04:50:26 +0000 2010  looooooooost!!
+
+sample output format
+-- i know	25025	4930956	2010-02-10	4	-61.17994
+-- people	36061	5128581	2010-02-10	2	-78982.27
+-- read	36061	5128581	2010-02-10	2	1398.9912
+
+
 Created by Peter Skomoroch on 2010-03-29.
 Copyright (c) 2010 Data Wrangling LLC. All rights reserved.
 """
@@ -13,7 +23,7 @@ import zipimport
 import cPickle as pickle
 import rfc822
 import time
-from datetime import date
+import datetime
 
 # load NLTK from distributed cache
 importer = zipimport.zipimporter('nltkandyaml.mod')
@@ -24,16 +34,19 @@ nltk = importer.load_module('nltk')
 pkl_file = open('wikiphrases.pkl', 'rb')
 wikiphrases = pickle.load(pkl_file)
 
+# load stopword list
+stopwords = open('stopwords.txt','r').readlines()
+stopwords = [word.strip() for word in stopwords]
+
 def gethour(timestamp):
   ''' convert timestamp of form: "Mon Mar 22 02:23:53 +0000 2010" '''
-  timeval = time.mktime(rfc822.parsedate(timestamp))
-  dateval = date.fromtimestamp(timeval)
-  return dateval.hour
+  rftime = rfc822.parsedate(timestamp)
+  return str(rftime[3])
 
 def getdate(timestamp):
   ''' convert timestamp of form: "Mon Mar 22 02:23:53 +0000 2010" '''
-  timeval = time.mktime(rfc822.parsedate(timestamp))
-  dateval = date.fromtimestamp(timeval)
+  rftime = rfc822.parsedate(timestamp)
+  dateval = datetime.date(rftime[0], rftime[1], rftime[2])
   return dateval.isoformat()
 
 def tokenize(text):
@@ -43,7 +56,8 @@ def tokenize(text):
 
 def find_ngrams(seq, n):
   '''Use python list comprehension to generate ngrams'''
-  return [seq[i:i+n] for i in range(1+len(seq)-n)]
+  ngram_list = [seq[i:i+n] for i in range(1+len(seq)-n)]
+  return [' '.join(ngram) for ngram in ngram_list]
   
 def emit_phrases(ngrams, fipscode, geonameid, date, hour):
   '''Validate ngrams against wikipedia phrases and emit to stdout'''
@@ -57,14 +71,19 @@ for line in sys.stdin:
     date = getdate(timestamp)
     hour = gethour(timestamp)
     
-    unigrams = tokenize(chunk)
-    emit_phrases(unigrams, fipscode, geonameid, date, hour)  
+    unigrams = tokenize(tweet_text)
+    filtered_unigrams = list(set(unigrams) - set(stopwords))
+    emit_phrases(filtered_unigrams, fipscode, geonameid, date, hour)  
      
     bigrams = find_ngrams(unigrams, 2)
     emit_phrases(bigrams, fipscode, geonameid, date, hour)  
     
     trigrams = find_ngrams(unigrams, 3)
     emit_phrases(trigrams, fipscode, geonameid, date, hour)
+    
+    fourgrams = find_ngrams(unigrams, 4)
+    emit_phrases(fourgrams, fipscode, geonameid, date, hour)    
+    
   except:
     pass
 
