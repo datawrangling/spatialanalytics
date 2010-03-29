@@ -2,6 +2,8 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
+-- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ tweet_ngrams.pig
+
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
   tweet_id:chararray,
@@ -48,7 +50,7 @@ std_locations = LOAD 's3://where20demo/standard_locations.txt' as (
   population:int, 
   fips:chararray);
   
-std_locations = FOREACH std_location GENERATE location, fips, geonameid;
+std_locations = FOREACH std_locations GENERATE location, fips, geonameid;
 
 -- use replicated join, since geoid/ location relations are small enough to fit into main memory.
 std_location_tweets = join filtered_tweets by 
