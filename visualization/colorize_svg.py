@@ -49,6 +49,9 @@ def generate_heatmap(intensities):
   # Find counties
   paths = soup.findAll('path')
   colors = ["#DEEBF7", "#C6DBEF", "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"]
+  min_value = min(intensities.values())
+  max_value = max(intensities.values())
+  scalefactor = (len(colors)-1)/(log(max_value +1)-log(min_value +1))
   # County style
   path_style = 'font-size:12px;fill-rule:nonzero;stroke:#FFFFFF;stroke-opacity:1;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:butt;marker-start:none;stroke-linejoin:bevel;fill:'
   # we will append this hover tooltip after each county path
@@ -76,10 +79,10 @@ def generate_heatmap(intensities):
       set_tag['from'] = "hidden" 
       set_tag['to'] = "visible" 
       set_tag['end'] = p['id']+'.mouseout'
-      color_class = min(int(log(count +1)), len(colors)-1)     
-      # color_class = min(int(10*count/(labor+1.0)), len(colors)-1)   
-      # color_class = min(int(log(count + 1.0))-min_value, len(colors)-1)    
+      color_class = min(int(scalefactor*log(count +1)), len(colors)-1)  
       # color_class = int((float(len(colors)-1) * float(count - min_value)) / float(max_value - min_value))
+      # if count > 0:
+      #   print color_class
       color = colors[color_class]
       p['style'] = path_style + color    
   print soup.prettify()
