@@ -46,6 +46,7 @@ h3. Setting up our Hadoop cluster
 </pre>	
 
 * Install git and fetch the same spatialanalytics code on the Hadoop cluster:
+
 <pre>
 	sudo apt-get -y install git-core
 	cd /mnt
@@ -59,7 +60,7 @@ h3. Counting locations with Hadoop
 * Count global locations in parsed Tweets with Pig
 ** <pre>
 $ cd /mnt/spatialanalytics/pig	
-$ pig -l /mnt global_location_counts.pig 	
+$ pig -l /mnt -p INPUT=s3://where20demo/sample-tweets locationcounts/global_location_counts.pig 	
 </pre>
 ** pig/total_users.pig
 * Count US based locations in parsed Tweets with Pig
