@@ -2,7 +2,15 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
--- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ tweet_ngrams.pig
+-- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ -p MYBUCKET=where20 tweet_ngrams.pig
+
+cp file:///mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py s3://$MYBUCKET/tweet_tokenizer.py
+cp file:///mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod s3://$MYBUCKET/nltkandyaml.mod
+cp file:///mnt/spatialanalytics/pig/spatialtrends/stopwords.txt s3://$MYBUCKET/stopwords.txt
+
+DEFINE tweet_tokenizer `tweet_tokenizer.py` cache('s3://$MYBUCKET/tweet_tokenizer.py#tweet_tokenizer.py', 
+'s3://$MYBUCKET/nltkandyaml.mod#nltkandyaml.mod',
+'s3://$MYBUCKET/stopwords.txt#stopwords.txt','s3://where20demo/wikiphrases.pkl#wikiphrases.pkl');   
 
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
@@ -66,15 +74,8 @@ LOWER($0) as tweet_text;
 -- 31055 5074472 Wed Feb 10 04:59:42 +0000 2010  thanks for coming to pub quiz steph jess ali and stacey!
 -- 06073 5391811 Wed Feb 10 04:50:26 +0000 2010  looooooooost!!
 
--- fetch larger file from S3 for shipping to distributed cache
--- cp s3://where20demo/wikiphrases.pkl file:///mnt/
-cache('s3://where20demo/wikiphrases.pkl#wikiphrases.pkl')
 
-DEFINE tweet_tokenizer `tweet_tokenizer.py`
-  SHIP ('/mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py',
-   '/mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod', 
-   '/mnt/spatialanalytics/pig/spatialtrends/stopwords.txt');
-  tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
+tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
   AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
    
 rmf tweet_ngrams
