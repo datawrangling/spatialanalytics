@@ -9,23 +9,33 @@ INPUTFILES=$1
 echo Running US location counts
 echo --------------------------
 pig -p INPUT=$INPUTFILES -l /mnt us_location_counts.pig
+
 echo Running Exact Match to Geonames "City, State"
 echo --------------------------
 pig -l /mnt city_state_exactmatch.pig
+
 echo Running Exact Match to Geonames "City"
 echo --------------------------
 pig -l /mnt city_exactmatch.pig
+
 echo Running Turk Match to Geonames location strings
 echo --------------------------
 pig -l /mnt turk_exactmatch.pig
+
 echo Merging Standardized location strings
 echo --------------------------
 pig -l /mnt standardize_locations.pig
+rm /mnt/standard_locations.txt 
+hadoop fs -getmerge /standard_locations /mnt/standard_locations.txt
+## result is 'standard_locations' 
+# location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray
+
 echo Checking county level user counts...
 echo --------------------------
 pig -l /mnt county_counts.pig
-## result is 'standard_locations' 
-# location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray
+rm /mnt/county_counts.txt 
+hadoop fs -getmerge /county_counts /mnt/county_counts.txt
+
 echo Generating list of unknown locations for turkers
 echo --------------------------
 pig -p INPUT=$INPUTFILES -l /mnt locations_timezones.pig
