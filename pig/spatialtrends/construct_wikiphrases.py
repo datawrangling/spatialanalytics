@@ -24,11 +24,13 @@ import cPickle as pickle
 
 def main():
   wikiphrases = {}
-  reader = csv.reader(open('pages-20100316.txt', "rb"), delimiter='\t', quoting=csv.QUOTE_NONE)
+  reader = csv.reader(open('page_lookups.txt', "rb"), delimiter='\t', quoting=csv.QUOTE_NONE)
   
+  #phrase std_phrase  page_from page_to
+  #Barack_Obama_"Progress"_poster  Barack Obama "Hope" poster      21129442        276142252
   for i, row in enumerate(reader):
-    title, daily_trend = row[2], row[6]
-    wikiphrases[title.lower()] = float(daily_trend)
+    phrase, std_phrase = row[0], row[1]
+    wikiphrases[phrase.lower().replace('_',' ')] = 1
     if i % 100000 == 0:
       print i
   
@@ -42,7 +44,7 @@ def main():
   wikiphrases = pickle.load(pkl_file)
   
   print wikiphrases['gossip girl']
-  print wikiphrases['barack obama']
+  print wikiphrases['obama']
 
 if __name__ == '__main__':
   main()

@@ -24,15 +24,19 @@ import cPickle as pickle
 import rfc822
 import time
 import datetime
+import re
+
+# Pattern for fully-qualified URLs:
+url_pattern = re.compile('''["']http://[^+]*?['"]''')
 
 # load NLTK from distributed cache
 importer = zipimport.zipimporter('nltkandyaml.mod')
 yaml = importer.load_module('yaml')
 nltk = importer.load_module('nltk')
 
-# # load Wikipedia page title hash
-# pkl_file = open('wikiphrases.pkl', 'rb')
-# wikiphrases = pickle.load(pkl_file)
+# load Wikipedia page title hash
+pkl_file = open('wikiphrases.pkl', 'rb')
+wikiphrases = pickle.load(pkl_file)
 
 # load stopword list
 stopwords = open('stopwords.txt','r').readlines()
@@ -62,14 +66,14 @@ def find_ngrams(seq, n):
 def emit_phrases(ngrams, fipscode, geonameid, date, hour):
   '''Validate ngrams against wikipedia phrases and emit to stdout'''
   for ngram in ngrams:
-    # if wikiphrases.has_key(ngram):
-    try:
-      #exclude numbers
-      int(ngram):
-    except:  
-      #exclude special chars
-      if len(ngram.strip()) > 1:
-        print '\t'.join([ngram, fipscode, geonameid, date, hour])  
+    if wikiphrases.has_key(ngram):
+      try:
+        #exclude numbers
+        int(ngram)
+      except:  
+        #exclude special chars
+        if len(ngram.strip()) > 1:
+          print '\t'.join([ngram, fipscode, geonameid, date, hour])  
 
 for line in sys.stdin:
   try:

@@ -569,3 +569,11 @@ yourself
 yourselves
 z
 zero
+http
+rt
+...
+--
+bit
+ly
+tinyurl
+twitpic
