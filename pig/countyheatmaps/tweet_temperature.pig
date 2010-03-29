@@ -51,10 +51,10 @@ std_location = LOAD 's3://where20demo/standard_locations.txt' as (
 std_location = FOREACH std_location GENERATE location, fips;
 
 cold_tweets = JOIN std_location BY location, cold_tweets BY LOWER(user_location) using "replicated";
-cold_tweets = FOREACH cold_tweets GENERATE $1 as fips, $3 as user_description;
+cold_tweets = FOREACH cold_tweets GENERATE $1 as fips, $3 as tweet_text;
 
-warm_tweets = JOIN std_location BY location, warm_tweets BY user_location using "replicated";
-warm_tweets = FOREACH warm_tweets GENERATE $1 as fips, $3 as user_description;
+warm_tweets = JOIN std_location BY location, warm_tweets BY LOWER(user_location) using "replicated";
+warm_tweets = FOREACH warm_tweets GENERATE $1 as fips, $3 as tweet_text;
 
 cold_counts = GROUP cold_tweets BY fips;
 cold_counts = FOREACH cold_counts GENERATE $0 as fips, SIZE($1) as count;
