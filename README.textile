@@ -17,7 +17,7 @@ h3. Setting up our Hadoop cluster
 
 * Launch an interactive Pig Session using Elastic MapReduce and note the ec2 address (something like ec2-174-129-153-177.compute-1.amazonaws.com) 
 
-* Get the spatialanalytics code from github and use the hcon.sh script on your local machine to set up the Hadoop web UI in a browser window:
+* Get the spatialanalytics code from github and use the hcon.sh script on your local machine to set up the Hadoop web UI in a browser window (substitute the path to your own EC2 keypair and instance address)
 
 <pre>
 	git clone git://github.com/datawrangling/spatialanalytics.git

@@ -80,10 +80,22 @@ tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
 wikipedia_dictionary = LOAD 's3://where20demo/wikipedia_dictionary.txt.gz' as (
   phrase:chararray);   
    
-tweet_phrases = JOIN tweet_ngrams BY ngram, wikipedia_dictionary BY LOWER(phrase);
+phrases = JOIN tweet_ngrams BY ngram, wikipedia_dictionary BY LOWER(phrase);
 
-tweet_phrases = FOREACH tweet_phrases GENERATE
-$1 as phrase, $2 as fipscode, $3 as geonameid, $4 as date, $5 as hour;
+phrases = FOREACH phrases GENERATE
+$0 as phrase, $1 as fipscode, $2 as geonameid, $3 as date, $4 as hour;
+
+grouped_phrases = GROUP phrases by (phrase, fipscode, date, hour);
+
+tweet_phrases = FOREACH grouped_phrases GENERATE 
+$0.phrase as phrase, 
+$0.date as date, 
+$0.hour as hour,
+$0.fipscode as fipscode,
+SIZE($1) as count;
+
+tweet_phrases = ORDER tweet_phrases BY phrase desc, date asc, hour, asc;
+
    
 rmf tweet_phrases
 store tweet_phrases into 'tweet_phrases';
