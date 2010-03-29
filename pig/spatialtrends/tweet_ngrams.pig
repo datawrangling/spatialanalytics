@@ -4,9 +4,9 @@ DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
 -- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ tweet_ngrams.pig
 
-cp file:///mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py s3://where20demo/tweet_tokenizer.py
-cp file:///mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod s3://where20demo/nltkandyaml.mod
-cp file:///mnt/spatialanalytics/pig/spatialtrends/stopwords.txt s3://where20demo/stopwords.txt
+--cp file:///mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py s3://where20demo/tweet_tokenizer.py
+--cp file:///mnt/spatialanalytics/pig/spatialtrends/nltkandyaml.mod s3://where20demo/nltkandyaml.mod
+--cp file:///mnt/spatialanalytics/pig/spatialtrends/stopwords.txt s3://where20demo/stopwords.txt
 
 DEFINE tweet_tokenizer `tweet_tokenizer.py`
     CACHE ('s3://where20demo/tweet_tokenizer.py#tweet_tokenizer.py','s3://where20demo/nltkandyaml.mod#nltkandyaml.mod',
@@ -80,7 +80,7 @@ tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
 wikipedia_dictionary = LOAD 's3://where20demo/wikipedia_dictionary.txt.gz' as (
   phrase:chararray);   
    
-tweet_phrases = JOIN wikipedia_dictionary BY LOWER(phrase), tweet_ngrams BY ngram using "replicated";
+tweet_phrases = JOIN tweet_ngrams BY ngram, wikipedia_dictionary BY LOWER(phrase);
 
 tweet_phrases = FOREACH tweet_phrases GENERATE
 $1 as phrase, $2 as fipscode, $3 as geonameid, $4 as date, $5 as hour;
