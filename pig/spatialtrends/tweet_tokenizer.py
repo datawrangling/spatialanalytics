@@ -11,6 +11,9 @@ import sys
 import os
 import zipimport
 import cPickle as pickle
+import rfc822
+import time
+from datetime import date
 
 # load NLTK from distributed cache
 importer = zipimport.zipimporter('nltkandyaml.mod')
@@ -22,10 +25,16 @@ pkl_file = open('wikiphrases.pkl', 'rb')
 wikiphrases = pickle.load(pkl_file)
 
 def gethour(timestamp):
-  pass
+  ''' convert timestamp of form: "Mon Mar 22 02:23:53 +0000 2010" '''
+  timeval = time.mktime(rfc822.parsedate(timestamp))
+  dateval = date.fromtimestamp(timeval)
+  return dateval.hour
 
 def getdate(timestamp):
-  pass  
+  ''' convert timestamp of form: "Mon Mar 22 02:23:53 +0000 2010" '''
+  timeval = time.mktime(rfc822.parsedate(timestamp))
+  dateval = date.fromtimestamp(timeval)
+  return dateval.isoformat()
 
 def tokenize(text):
   tokenizer = nltk.tokenize.punkt.PunktWordTokenizer()
@@ -40,7 +49,7 @@ def emit_phrases(ngrams, fipscode, geonameid, date, hour):
   '''Validate ngrams against wikipedia phrases and emit to stdout'''
   for ngram in ngrams:
     if wikiphrases.has_key(ngram):
-      print '\t'.join([ngram, fipscode, geonameid, date, hour])  
+      print '\t'.join([ngram, fipscode, geonameid, date, hour, str(wikiphrases[ngram])])  
 
 for line in sys.stdin:
   try:

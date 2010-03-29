@@ -58,15 +58,17 @@ std_location_tweets = FOREACH std_location_tweets GENERATE
 $4 as fips, 
 $5 as geonameid,
 $2 as tweet_created_at,
-$0 as tweet_text;
+LOWER($0) as tweet_text;
 
-DEFINE tweet_tokenizer `tweet_tokenizer.py`
-  SHIP ('tweet_tokenizer.py', 'nltkandyaml.mod', 's3://where20demo/wikiphrases.pkl');
-tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
-  AS (ngram:chararray, fipscode:chararray, geonameid:int, date:int, hour:int);
+store std_location_tweets INTO 'std_location_tweets';
+
+--DEFINE tweet_tokenizer `tweet_tokenizer.py`
+--  SHIP ('tweet_tokenizer.py', 'nltkandyaml.mod', 's3://where20demo/wikiphrases.pkl');
+--tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
+--  AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
    
-rmf tweet_ngrams
-store tweet_ngrams into 'tweet_ngrams';
+--rmf tweet_ngrams
+--store tweet_ngrams into 'tweet_ngrams';
 
 
 
