@@ -2,11 +2,6 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
-DEFINE CMD `tweet_tokenizer.py` ship('./tweet_tokenizer.py'); 
--- fetch larger file from S3 for shipping to distributed cache
-cp s3://where20demo/wikiphrases.pkl file:///mnt/
-SHIP ('./nltkandyaml.mod', '/mnt/wikiphrases.pkl', './stopwords.txt');
-
 -- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ tweet_ngrams.pig
 
 tweets = LOAD '$INPUT' as (
@@ -71,8 +66,13 @@ LOWER($0) as tweet_text;
 -- 31055 5074472 Wed Feb 10 04:59:42 +0000 2010  thanks for coming to pub quiz steph jess ali and stacey!
 -- 06073 5391811 Wed Feb 10 04:50:26 +0000 2010  looooooooost!!
 
-tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
-AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
+-- fetch larger file from S3 for shipping to distributed cache
+cp s3://where20demo/wikiphrases.pkl file:///mnt/
+
+DEFINE tweet_tokenizer `tweet_tokenizer.py`
+  SHIP ('./tweet_tokenizer.py', './nltkandyaml.mod', '/mnt/wikiphrases.pkl', './stopwords.txt');
+  tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
+  AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
    
 rmf tweet_ngrams
 store tweet_ngrams into 'tweet_ngrams';
