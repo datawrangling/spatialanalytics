@@ -1,14 +1,16 @@
 #!/usr/bin/env pythonw
 # encoding: utf-8
 # requires BeautifulSoup
-# $ python colorize_svg.py > daily.svg
+# based on Flowing Data blog post: 
+# http://flowingdata.com/2009/11/12/how-to-make-a-us-county-thematic-map-using-free-tools/
+#
+# Usage:
+# $ python colorize_svg.py > twitter_users.svg
  
 import csv
 from BeautifulSoup import BeautifulSoup, Tag
 from math import log
-import time
-
- 
+import time 
 # import pylab
 
 # read in twitter user counts & county populations...
@@ -97,7 +99,10 @@ paths = soup.findAll('path')
 # Map colors
 # colors = [ "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"]
 
-colors = ["#F7FBFF", "#DEEBF7", "#C6DBEF", "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"]
+# too whitewashed...
+# colors = ["#F7FBFF", "#DEEBF7", "#C6DBEF", "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"]
+
+colors = ["#DEEBF7", "#C6DBEF", "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"]
 
 # County style
 path_style = 'font-size:12px;fill-rule:nonzero;stroke:#FFFFFF;stroke-opacity:1;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:butt;marker-start:none;stroke-linejoin:bevel;fill:'
@@ -140,7 +145,7 @@ for p in paths:
       count = usercount[p['id']]
     except:
       # print "Missing", p["id"] 
-      continue
+      count = 0
     x, y = (p['d'].split()[1]).split(',')
     # print p['id'], p['inkscape:label'], x, y
     # insert a new text tag for the county hover tooltip...
