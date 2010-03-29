@@ -20,7 +20,7 @@ h3. Setting up our Hadoop cluster
 <pre>
 	git clone git://github.com/datawrangling/spatialanalytics.git
 	cd spatialanalytics/
-	./util/hcon.sh ec2-174-129-153-177.compute-1.amazonaws.com
+	./util/hcon.sh ec2-174-129-153-177.compute-1.amazonaws.com /Users/pskomoroch/id_rsa-gsg-keypair
 </pre>	
 
 * ssh into the master Hadoop instance

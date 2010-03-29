@@ -1,8 +1,9 @@
 #!/bin/bash -e
 
+# http://dev.bizo.com/2009/11/quick-script-open-hadoop-jobtracker-ui.html
 # need to replace this with the fully qualified path to your private key file
 # for emr.
-KEYFILE="/Users/pskomoroch/id_rsa-gsg-keypair"
+KEYFILE=$2
 
 # assumes 'open' (mac os).  otherwise you can set the BROWSER env variable
 # or just change this line..

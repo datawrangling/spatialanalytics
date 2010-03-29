@@ -3,7 +3,7 @@ DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 
 --%default INPUT s3://where20demo/sample-tweets/
 
--- $ pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ political_counts.pig
+-- $ pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ tweet_temperature.pig
 
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
@@ -39,31 +39,31 @@ filtered_tweets = FILTER filtered_tweets
   OR (user_time_zone == 'Arizona')
   OR (user_time_zone == 'Indiana (East)');
 
-filtered_tweets = FOREACH filtered_tweets GENERATE user_location, user_description;
+filtered_tweets = FOREACH filtered_tweets GENERATE user_location, tweet_text;
 
 SPLIT filtered_tweets INTO 
-  conservative_tweets IF (LOWER(user_description) matches '.*conservative.*'), 
-  liberal_tweets IF (LOWER(user_description) matches '.*liberal.*');
+  cold_tweets IF (LOWER(tweet_text) matches '.*cold.*'), 
+  warm_tweets IF (LOWER(tweet_text) matches '.*warm.*');
 
 -- join to standardized locations
 std_location = LOAD 's3://where20demo/standard_locations.txt' as (
   location:chararray, std_location:chararray, user_count:int, geonameid:int, population:int, fips:chararray);
 std_location = FOREACH std_location GENERATE location, fips;
 
-conservative_tweets = JOIN std_location BY location, conservative_tweets BY user_location using "replicated";
-conservative_tweets = FOREACH conservative_tweets GENERATE $1 as fips, $3 as user_description;
+cold_tweets = JOIN std_location BY location, cold_tweets BY user_location using "replicated";
+cold_tweets = FOREACH cold_tweets GENERATE $1 as fips, $3 as user_description;
 
-liberal_tweets = JOIN std_location BY location, liberal_tweets BY user_location using "replicated";
-liberal_tweets = FOREACH liberal_tweets GENERATE $1 as fips, $3 as user_description;
+warm_tweets = JOIN std_location BY location, warm_tweets BY user_location using "replicated";
+warm_tweets = FOREACH warm_tweets GENERATE $1 as fips, $3 as user_description;
 
-conservative_counts = GROUP conservative_tweets BY fips;
-conservative_counts = FOREACH conservative_counts GENERATE $0 as fips, SIZE($1) as count;
+cold_counts = GROUP cold_tweets BY fips;
+cold_counts = FOREACH cold_counts GENERATE $0 as fips, SIZE($1) as count;
 
-liberal_counts = GROUP liberal_tweets BY fips;
-liberal_counts = FOREACH liberal_counts GENERATE $0 as fips, SIZE($1) as count;
+warm_counts = GROUP warm_tweets BY fips;
+warm_counts = FOREACH warm_counts GENERATE $0 as fips, SIZE($1) as count;
 
-rmf liberal_counts
-STORE liberal_counts INTO 'liberal_counts';
+rmf warm_counts
+STORE warm_counts INTO 'warm_counts';
 
-rmf conservative_counts
-STORE conservative_counts INTO 'conservative_counts';
+rmf cold_counts
+STORE cold_counts INTO 'cold_counts';
