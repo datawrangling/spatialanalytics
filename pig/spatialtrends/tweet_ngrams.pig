@@ -10,7 +10,7 @@ DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
 DEFINE tweet_tokenizer `tweet_tokenizer.py`
     CACHE ('s3://where20demo/tweet_tokenizer.py#tweet_tokenizer.py','s3://where20demo/nltkandyaml.mod#nltkandyaml.mod',
-     's3://where20demo/stopwords.txt#stopwords.txt', 's3://where20demo/wikiphrases.pkl#wikiphrases.pkl');  
+     's3://where20demo/stopwords.txt#stopwords.txt');  
 
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
@@ -74,16 +74,15 @@ LOWER($0) as tweet_text;
 -- 31055 5074472 Wed Feb 10 04:59:42 +0000 2010  thanks for coming to pub quiz steph jess ali and stacey!
 -- 06073 5391811 Wed Feb 10 04:50:26 +0000 2010  looooooooost!!
 
-
 tweet_ngrams = STREAM std_location_tweets THROUGH tweet_tokenizer
-  AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int, daily_trend:float);
+  AS (ngram:chararray, fipscode:chararray, geonameid:int, date:chararray, hour:int);
    
 rmf tweet_ngrams
 store tweet_ngrams into 'tweet_ngrams';
 
 --sample output format
--- i know	25025	4930956	2010-02-10	4	-61.17994
--- people	36061	5128581	2010-02-10	2	-78982.27
--- read	36061	5128581	2010-02-10	2	1398.9912
+-- i know	25025	4930956	2010-02-10	4
+-- people	36061	5128581	2010-02-10	2
+-- read	36061	5128581	2010-02-10	2
 
 

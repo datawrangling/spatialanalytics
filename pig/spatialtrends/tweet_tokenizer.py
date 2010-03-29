@@ -8,9 +8,9 @@ sample input format:
 -- 06073 5391811 Wed Feb 10 04:50:26 +0000 2010  looooooooost!!
 
 sample output format
--- i know	25025	4930956	2010-02-10	4	-61.17994
--- people	36061	5128581	2010-02-10	2	-78982.27
--- read	36061	5128581	2010-02-10	2	1398.9912
+-- i know	25025	4930956	2010-02-10	4
+-- people	36061	5128581	2010-02-10	2
+-- read	36061	5128581	2010-02-10	2
 
 
 Created by Peter Skomoroch on 2010-03-29.
@@ -30,9 +30,9 @@ importer = zipimport.zipimporter('nltkandyaml.mod')
 yaml = importer.load_module('yaml')
 nltk = importer.load_module('nltk')
 
-# load Wikipedia page title hash
-pkl_file = open('wikiphrases.pkl', 'rb')
-wikiphrases = pickle.load(pkl_file)
+# # load Wikipedia page title hash
+# pkl_file = open('wikiphrases.pkl', 'rb')
+# wikiphrases = pickle.load(pkl_file)
 
 # load stopword list
 stopwords = open('stopwords.txt','r').readlines()
@@ -62,8 +62,14 @@ def find_ngrams(seq, n):
 def emit_phrases(ngrams, fipscode, geonameid, date, hour):
   '''Validate ngrams against wikipedia phrases and emit to stdout'''
   for ngram in ngrams:
-    if wikiphrases.has_key(ngram):
-      print '\t'.join([ngram, fipscode, geonameid, date, hour, str(wikiphrases[ngram])])  
+    # if wikiphrases.has_key(ngram):
+    try:
+      #exclude numbers
+      int(ngram):
+    except:  
+      #exclude special chars
+      if len(ngram.strip()) > 1:
+        print '\t'.join([ngram, fipscode, geonameid, date, hour])  
 
 for line in sys.stdin:
   try:
