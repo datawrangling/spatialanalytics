@@ -2,6 +2,7 @@ REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
+-- pig -l /mnt -p INPUT=s3://where20/parsed-tweets-2010* tweet_ngrams.pig
 -- pig -l /mnt -p INPUT=s3://where20demo/sample-tweets/ tweet_ngrams.pig
 
 --cp file:///mnt/spatialanalytics/pig/spatialtrends/tweet_tokenizer.py s3://where20demo/tweet_tokenizer.py
@@ -46,8 +47,10 @@ filtered_tweets = FILTER filtered_tweets BY
   OR (user_time_zone == 'Arizona')
   OR (user_time_zone == 'Indiana (East)');
   
-filtered_tweets = FOREACH filtered_tweets
- GENERATE tweet_text, user_location, tweet_created_at;
+filtered_tweets = FOREACH filtered_tweets GENERATE 
+  tweet_text, 
+  user_location, 
+  tweet_created_at;
 
 -- Standardize locations in tweets
 std_locations = LOAD 's3://where20demo/standard_locations.txt' as (
@@ -58,7 +61,10 @@ std_locations = LOAD 's3://where20demo/standard_locations.txt' as (
   population:int, 
   fips:chararray);
   
-std_locations = FOREACH std_locations GENERATE location, fips, geonameid;
+std_locations = FOREACH std_locations GENERATE 
+  location, 
+  fips, 
+  geonameid;
 
 -- use replicated join, since geoid/ location relations are small enough to fit into main memory.
 std_location_tweets = join filtered_tweets by 
@@ -96,7 +102,6 @@ SIZE($1) as count;
 
 rmf tweet_phrases
 store tweet_phrases into 'tweet_phrases';
-
 
 --sample output format
 -- i know	25025	4930956	2010-02-10	4
