@@ -6,7 +6,6 @@
 REGISTER s3://piggybank/0.6.0/piggybank.jar
 DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
-DEFINE FILENAME REPLACE('$PHRASE', ' ', '_');
 
 tweet_phrases = LOAD 's3://where20demo/tweet_phrases/'as (
   phrase:chararray, 
@@ -21,7 +20,7 @@ grouped_loc = GROUP filtered_phrases BY fipscode;
 fips_counts = FOREACH grouped_loc GENERATE $0 as fipscode, SUM($1.count) as count;
 sorted_fips = ORDER fips_counts BY count DESC;
 
-STORE foo as 's3://where20demo/mapdata/$PHRASE.txt'  
+STORE foo as 'static_map.txt'  
 
 -- we can also normalize by population by joining to geonames table:
 standard_us_cities = LOAD 's3://where20demo/standard_us_cities.txt' as (
