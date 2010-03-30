@@ -85,22 +85,17 @@ phrases = JOIN tweet_ngrams BY ngram, wikipedia_dictionary BY LOWER(phrase);
 phrases = FOREACH phrases GENERATE
 $0 as phrase, $1 as fipscode, $2 as geonameid, $3 as date, $4 as hour;
 
-grouped_phrases = GROUP phrases by (phrase, fipscode, date, hour);
+grouped_phrases = GROUP phrases by (phrase, date, hour, fipscode);
 
 tweet_phrases = FOREACH grouped_phrases GENERATE 
 $0.phrase as phrase, 
 $0.date as date, 
-$0.hour as hour,
+$0.hour as hour, 
 $0.fipscode as fipscode,
 SIZE($1) as count;
 
-tweet_phrases = ORDER tweet_phrases BY date, hour;
-
 rmf tweet_phrases
 store tweet_phrases into 'tweet_phrases';
-
-
-
 
 
 --sample output format
