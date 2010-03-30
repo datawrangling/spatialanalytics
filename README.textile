@@ -62,9 +62,9 @@ h3. Counting locations with Hadoop
 * Count global locations in parsed Tweets with Pig
 ** <pre>
 $ cd /mnt/spatialanalytics/pig	
-$ pig -l /mnt -p INPUT=s3://where20demo/sample-tweets locationcounts/global_location_counts.pig 	
+$ pig -l /mnt locationcounts/global_location_tweets.pig 
+$ hadoop dfs -cat /global_location_tweets/part-* | head -30	
 </pre>
-** pig/total_users.pig
 * Count US based locations in parsed Tweets with Pig
 ** pig/us_location_counts.pig
 * Visualize long tail of locations
