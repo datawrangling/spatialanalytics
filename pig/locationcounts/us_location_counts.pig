@@ -3,7 +3,7 @@ DEFINE LOWER org.apache.pig.piggybank.evaluation.string.LOWER();
 DEFINE REPLACE org.apache.pig.piggybank.evaluation.string.REPLACE();
 
 --%default INPUT s3://where20demo/sample-tweets/
-
+-- pig -l /mnt -p s3://where20demo/sample-tweets/ us_location_counts.pig
 -- You can replace '$INPUT' with 's3://where20demo/sample-tweets/'
 tweets = LOAD '$INPUT' as (
   user_screen_name:chararray, 
