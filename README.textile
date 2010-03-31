@@ -81,6 +81,7 @@ h3. Standardize location strings using exact matches in Geonames data
 h3. Standardize remaining location strings with Mechanical Turk
 
 * Expose Geonames data in a Rails search interface
+** The code for the Turk task and rails app is here: http://github.com/datawrangling/locations
 * Run Pig jobs to generate top locations & time zones for turkers
 ** pig/locations_timezones.pig
 * Publish mechanical turk tasks 
